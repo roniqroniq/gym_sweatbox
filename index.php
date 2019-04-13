@@ -1,4 +1,4 @@
-<?php  
+<?php  hi there 
 require "header.php";
  ?>
  <main>
