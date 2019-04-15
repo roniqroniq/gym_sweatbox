@@ -5,7 +5,7 @@ include "header.php";
 
 <p>Hello</p>
 
-    Hello
+    Hello there everyone
 <html>
     <body>
     <div id="backgroundimage1"></div>
