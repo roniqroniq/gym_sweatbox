@@ -51,6 +51,9 @@
               <li class="nav-item active">
                 <a class="nav-link" href="signup.php">JOIN NOW</a>
               </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.php">CONTACT US</a>
+              </li>
 
               <li class="nav-item  active dropdown">
                   <a class="nav-link dropdown-toggle" id=""href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
