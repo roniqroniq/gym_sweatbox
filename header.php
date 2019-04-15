@@ -46,6 +46,9 @@
                 <a class="nav-link" href="classes.php">CLASSES</a>
               </li>
               <li class="nav-item active">
+                <a class="nav-link" href="testimonial.php">TESTIMONIALS</a>
+              </li>
+              <li class="nav-item active">
                 <a class="nav-link" href="signup.php">JOIN NOW</a>
               </li>
 
