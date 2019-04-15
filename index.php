@@ -3,11 +3,9 @@ include "header.php";
 ?>
 <head>
 
-
 <html>
 <body>
 
-bob
 <div id="backgroundimage"></div>
 
 <br>
