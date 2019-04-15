@@ -5,10 +5,10 @@ include "header.php";
 
 
 <html>
-<body>  
+<body>
 
-       
-<div id="backgroundimage"></div> 
+test
+<div id="backgroundimage"></div>
 
 <br>
 <section id="about">
@@ -31,7 +31,7 @@ include "header.php";
 <br>
 <br>
   <section id="services" class="bg-light">
-      
+
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -46,7 +46,7 @@ include "header.php";
     </div>
   </section>
   <br>
-  
+
 
 <script>
 
@@ -68,7 +68,7 @@ $( window ).on( "load", function() {
 
  }
      });
-   
+
 
 
 

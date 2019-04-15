@@ -1,17 +1,20 @@
 nav li a{
     font-family: 'Archivo', sans-serif,'important';
-    
+
 }
 
 h2{
   font-family: 'Archivo', sans-serif,'important';
-  
+
 }
 P{
   font-family: 'Roboto', sans-serif;
 }
 
+header{
 
+  background: #ffffff;
+}
 
 
 
@@ -19,7 +22,7 @@ P{
 
 
 footer {
-    
+
     background: linear-gradient(59deg,#545454,rgb(132, 134, 134));
     color: white;
     margin-top:100px;
@@ -31,63 +34,63 @@ footer {
   .navy  {
     color:black;
     top:-70px;
- 
+
     }
-        
+
   footer a {
     color: #fff;
     font-size: 14px;
     transition-duration: 0.2s;
   }
-  
+
   footer a:hover {
     color: black;
     text-decoration: none;
   }
-  
+
   .copy {
     font-size: 12px;
     padding: 10px;
     border-top: 1px solid #FFFFFF;
   }
-  
+
   .footer-middle {
     padding-top: 2em;
     color: white;
   }
-  
-  
+
+
   /*SOCİAL İCONS*/
-  
+
   /* footer social icons */
-  
+
   ul.social-network {
     list-style: none;
     display: inline;
     margin-left: 0 !important;
     padding: 0;
   }
-  
+
   ul.social-network li {
     display: inline;
     margin: 0 5px;
   }
-  
-  
+
+
   /* footer social icons */
-  
-  
+
+
    li a{
     font-family: 'Archivo', sans-serif,'important';
   }
-  
-  
+
+
   h4{
-    font-family: 'Archivo', sans-serif ,'important'; 
-    
+    font-family: 'Archivo', sans-serif ,'important';
+
   }
-  
-  
+
+
   .social-circle li a {
     display: inline-block;
     position: relative;
@@ -100,13 +103,13 @@ footer {
     height: 30px;
     font-size: 15px;
   }
-  
+
   .social-circle li i {
     margin: 0;
     line-height: 30px;
     text-align: center;
   }
-  
+
   .social-circle li a:hover i,
   .triggeredHover {
     -moz-transform: rotate(360deg);
@@ -119,7 +122,7 @@ footer {
     -ms-transition: all 0.2s;
     transition: all 0.2s;
   }
-  
+
   .social-circle i {
     color:black;
     -webkit-transition: all 0.8s;
@@ -128,31 +131,28 @@ footer {
     -ms-transition: all 0.8s;
     transition: all 0.8s;
   }
-  
+
   .social-network a {
     background-color: white;
   }
-  
+
   #backgroundimage {
     background-image: url("gym.jpg");
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-   
-    } 
+
+    }
     #backgroundimage1 {
       background-image: url("brazil.jpg");
       width: 100vw;
-      height: 70vh; 
+      height: 70vh;
       background-size: 100%;
       background-repeat: no-repeat;
       position: relative;
-     
-      } 
-      
-    /* Events list css */
 
-    
-    
+      }
+
+    /* Events list css */
