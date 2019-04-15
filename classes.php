@@ -5,6 +5,8 @@ require "header.php";
     <div class="container">
       <h2>“Training gives us an outlet for suppressed energies created by
         stress and thus tones the spirit just as exercise conditions the body...”</h2>
+
+        test test
     </div>
   </div>
  <?php
