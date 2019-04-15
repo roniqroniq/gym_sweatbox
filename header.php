@@ -22,7 +22,7 @@
 
 <!-- Navigation -->
 <div class="navy">
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.php" style="max-width: 4%;">
                 <img src="logo.png" class="img-fluid">
              </a>
