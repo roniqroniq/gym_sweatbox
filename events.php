@@ -9,9 +9,6 @@ include "header.php";
    </div>
  </div>
 </main>
-<p>Hello</p>
-
-    Hello there everyone
 <html>
     <body>
     <div id="backgroundimage1"></div>
