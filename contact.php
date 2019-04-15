@@ -1,6 +1,64 @@
 <?php
 require "header.php";
  ?>
+ <script>
+ document.getElementById('status').innerHTML = "Sending...";
+formData = {
+'name'     : $('input[name=name]').val(),
+'email'    : $('input[name=email]').val(),
+'subject'  : $('input[name=subject]').val(),
+'message'  : $('textarea[name=message]').val()
+};
+
+
+$.ajax({
+url : "mail.php",
+type: "POST",
+data : formData,
+success: function(data, textStatus, jqXHR)
+{
+
+$('#status').text(data.message);
+if (data.code) //If mail was sent successfully, reset the form.
+$('#contact-form').closest('form').find("input[type=text], textarea").val("");
+},
+error: function (jqXHR, textStatus, errorThrown)
+{
+$('#status').text(jqXHR);
+}
+});
+  function validateForm() {
+  var name =  document.getElementById('name').value;
+  if (name == "") {
+      document.getElementById('status').innerHTML = "Name cannot be empty";
+      return false;
+  }
+  var email =  document.getElementById('email').value;
+  if (email == "") {
+      document.getElementById('status').innerHTML = "Email cannot be empty";
+      return false;
+  } else {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(!re.test(email)){
+          document.getElementById('status').innerHTML = "Email format invalid";
+          return false;
+      }
+  }
+  var subject =  document.getElementById('subject').value;
+  if (subject == "") {
+      document.getElementById('status').innerHTML = "Subject cannot be empty";
+      return false;
+  }
+  var message =  document.getElementById('message').value;
+  if (message == "") {
+      document.getElementById('status').innerHTML = "Message cannot be empty";
+      return false;
+  }
+  document.getElementById('status').innerHTML = "Sending...";
+  document.getElementById('contact-form').submit();
+
+  }
+</script>
  <body>
  <main>
    <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
@@ -11,22 +69,7 @@ require "header.php";
  </main>
  <p>Form enabling members of the public to leave a message which should contain:  - Name - Email - Phone no - Message </p>
 
- <?php
-if(isset( $_POST['name']))
-$name = $_POST['name'];
-if(isset( $_POST['email']))
-$email = $_POST['email'];
-if(isset( $_POST['message']))
-$message = $_POST['message'];
-if(isset( $_POST['subject']))
-$subject = $_POST['subject'];
 
-$content="From: $name \n Email: $email \n Message: $message";
-$recipient = "youremail@here.com";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $content, $mailheader) or die("Error!");
-echo "Email sent!";
-?>
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
@@ -91,7 +134,7 @@ echo "Email sent!";
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a class="btn btn-primary" onclick="validateForm()">Send</a>
             </div>
             <div class="status"></div>
         </div>
