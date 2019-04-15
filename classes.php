@@ -9,6 +9,9 @@ require "header.php";
       </div>
     </div>
   </div>
+  <p>Displays a list of class summaries , and their associated photo, and link.
+     All photos should be stored in a folder not on the database.
+    The link brings the logged in user to the relevant class page (using GET) and sends them to the login page.</p>
   <table class="table table-striped table-dark">
     <thead>
       <tr>
