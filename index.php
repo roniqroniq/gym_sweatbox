@@ -7,7 +7,7 @@ include "header.php";
 <html>
 <body>
 
-bob
+
 <div id="backgroundimage"></div>
 
 <br>
