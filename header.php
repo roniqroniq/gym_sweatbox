@@ -49,6 +49,9 @@
                 <a class="nav-link" href="testimonial.php">TESTIMONIALS</a>
               </li>
               <li class="nav-item active">
+                <a class="nav-link" href="careers.php">CAREERS</a>
+              </li>
+              <li class="nav-item active">
                 <a class="nav-link" href="signup.php">JOIN NOW</a>
               </li>
               <li class="nav-item active">
@@ -56,10 +59,11 @@
               </li>
 
               <li class="nav-item  active dropdown">
-                  <a class="nav-link dropdown-toggle" href="membership.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     MEMBERSHIP
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="membership.php">LEVELS</a>
                     <a class="dropdown-item" href="testimonial.php">TESTIMONIALS</a>
                     <a class="dropdown-item" href="#">FORUM</a>
                     <a class="dropdown-item" href="events.php">EVENTS</a>

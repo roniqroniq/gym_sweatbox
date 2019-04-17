@@ -20,7 +20,7 @@ include "header.php";
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Membership Types</h1>
+  <h1 class="display-4">Membership Levels</h1>
   <p class="lead">Join the Sweat Box Club by choose from one of our three membership levels; Gold, Silver, Bronze.</p>
 </div>
 
@@ -38,7 +38,7 @@ include "header.php";
           <li>Choose any number of classes</li>
           <li>Free Personal Trainer once per month</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for Gold</button>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Sign up for Gold</button>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
