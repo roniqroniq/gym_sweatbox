@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="theme.css">
@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
    <link href="https://fonts.googleapis.com/css?family=Archivo:500" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
 
@@ -37,7 +38,7 @@
         <div class="footer-pad">
           <h4>TECHNICAL</h4>
           <ul class="list-unstyled">
-            
+
             <li><a href="#">Accessibility</a></li>
             <li><a href="#">Disclaimer</a></li>
             <li><a href="#">Privacy Policy</a></li>
@@ -69,7 +70,7 @@
              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
              <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
              <li><a href="#" class="icoTwitter" title="Linkedin"><i class="fa fa-twitter"></i></a></li>
-            </ul>				
+            </ul>
 		</div>
     </div>
 	<div class="row">
@@ -82,7 +83,7 @@
   </div>
   </div>
 </footer>
-  
-  
+
+
   </body>
 </html>
