@@ -6,10 +6,7 @@ include "header.php";
 <html>
 <body>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 332b8218d16e666bbd469dc4ca90bf570226df93
 <div id="backgroundimage"></div>
 
 <br>
