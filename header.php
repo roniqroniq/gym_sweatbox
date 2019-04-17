@@ -56,7 +56,7 @@
               </li>
 
               <li class="nav-item  active dropdown">
-                  <a class="nav-link dropdown-toggle" id=""href="membership.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="membership.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     MEMBERSHIP
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
