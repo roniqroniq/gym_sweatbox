@@ -14,8 +14,8 @@ require "header.php";
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" background-image= url(img/goldpic.jpg) /></svg>
-        <img src="img/one.jpg" alt="Gym Pic" height="42" width="42">
+
+        <img src="img/one1.jpg" alt="Gym Pic" height="42" width="42">
         <div class="container">
           <div class="carousel-caption text-left">
             <h1>Great Value for Money.</h1>
@@ -25,8 +25,8 @@ require "header.php";
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-        <img src="img/two.jpg" alt="Gym Pic" height="42" width="42">
+
+        <img src="img/two2.jpg" alt="Gym Pic" height="42" width="42">
         <div class="container">
           <div class="carousel-caption">
             <h1>Excellent classes and facilities!</h1>
@@ -36,7 +36,7 @@ require "header.php";
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        
 
         <img src="img/three.jpg" alt="Smiley face" height="42" width="42">
 
