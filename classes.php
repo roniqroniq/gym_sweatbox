@@ -17,7 +17,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="yoga3_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/yoga3_mini.pgn" alt="...">
                 </a>
               </div>
               <div class="media-body">
