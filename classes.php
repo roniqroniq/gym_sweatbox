@@ -18,7 +18,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/yoga_m.png" alt="...">
+                  <img class="mr-3" src="img/yoga_mini.jpg" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -31,7 +31,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/yoga2_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/yoga_mini.jpg" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -46,7 +46,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/kettlebell2_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/kettlebell_mini.png" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -59,7 +59,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/girl_bike_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/spin_mini.png" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -74,7 +74,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/weight1_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/weight_mini.png" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -87,7 +87,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/pilates3_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/pilates_mini.png" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -115,7 +115,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/instr_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/instr_mini.png" alt="...">
                 </a>
               </div>
               <div class="media-body">
