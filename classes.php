@@ -9,11 +9,13 @@ require "header.php";
       </div>
     </div>
   </div>
-  <p>Displays a list of class summaries , and their associated photo, and link.
-     All photos should be stored in a folder not on the database.
-    The link brings the logged in user to the relevant class page (using GET) and sends them to the login page.</p>
+<div class="container">
+  <h3>Want to get fitter, leaner and stronger? <br> These gym classes will kick you into shape in no time.</h3>
+</div>
+
     <div class="container">
     <div class="row">
+
         <div class="col-md-6">
             <div class="media">
               <div class="media-left">
@@ -31,7 +33,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/yoga_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/yoga_m2.png" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -102,7 +104,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="mr-3" src="img/boxing2_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/box.png" alt="...">
                 </a>
               </div>
               <div class="media-body">
