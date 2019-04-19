@@ -74,7 +74,7 @@
             <div class="collapse navbar-collapse" id="account">
             <ul class="navbar-nav ml-auto">
 
-              <li class="nav-item active"><a class="nav-link" href="signup.php">LOG IN</a></li>
+              <li class="nav-item active"><a class="nav-link" href="login.php">LOG IN</a></li>
             </ul>
           </div>
         </div>
