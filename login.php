@@ -22,14 +22,10 @@ require "header.php";
                         <label for="email"> Email:</label>
                         <input type="email" class="form-control" id="email" name="email" required maxlength="50">
                     </div>
-                    <div class="form-group">
-                        <label for="name"> Message:</label>
-                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs"a href="#" style="background-color:#ADFF2F" >Send &rarr;</button>
+                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:#ADFF2F" >Log in &rarr;</button>
                 </form>
-                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Logged in successfully!</h3> </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Try again!</div>
             </div>
         </div>
     </div>
