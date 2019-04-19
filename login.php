@@ -15,12 +15,12 @@ require "header.php";
                 <h2>Log In</h2> Please log in using the form below. </p>
                 <form role="form" method="post" id="login_form" >
                     <div class="form-group">
-                        <label for="name"> Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        <label for="email"> Email:</label>
+                        <input type="email" class="form-control" id="name" name="email" required maxlength="50">
                     </div>
                     <div class="form-group">
-                        <label for="email"> Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        <label for="password"> Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required maxlength="50">
                     </div>
                     <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:#ADFF2F" >Log in &rarr;</button>
                 </form>
