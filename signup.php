@@ -22,6 +22,14 @@
                        <label for="email"> Email:</label>
                        <input type="email" class="form-control" id="email" name="email" required maxlength="50">
                    </div>
+                   <div class="form-group">
+                       <label for="mobile"> Mobile number:</label>
+                       <input type="email" class="form-control" id="mobile" name="mobile" required maxlength="50">
+                   </div>
+                   <div class="form-group">
+                       <label for="mobile"> Mobile number:</label>
+                       <input type="email" class="form-control" id="mobile" name="mobile" required maxlength="50">
+                   </div>
                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:#ADFF2F" >Log in &rarr;</button>
                </form>
                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Logged in successfully!</h3> </div>
