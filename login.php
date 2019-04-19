@@ -12,7 +12,7 @@ require "header.php";
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h2>Contact Us</h2> Please log in using the form below. </p>
+                <h2>Log In</h2> Please log in using the form below. </p>
                 <form role="form" method="post" id="login_form" >
                     <div class="form-group">
                         <label for="name"> Name:</label>
