@@ -24,11 +24,32 @@
                    </div>
                    <div class="form-group">
                        <label for="mobile"> Mobile number:</label>
-                       <input type="email" class="form-control" id="mobile" name="mobile" required maxlength="50">
+                       <input type="text" class="form-control" id="mobile" name="mobile" required maxlength="50">
                    </div>
                    <div class="form-group">
-                       <label for="mobile"> Mobile number:</label>
-                       <input type="email" class="form-control" id="mobile" name="mobile" required maxlength="50">
+                       <label for="membership"> Membership:</label>
+                       <br>
+                       <form action="/action_page.php">
+                         <input type="checkbox" name="Gold" value="gold">Gold<br>
+                         <input type="checkbox" name="Silver" value="silver">Silver<br>
+                         <input type="checkbox" name="Bronze" value="bronze" checked>Bronze<br><br>
+                      </form>
+                   </div>
+                   <div class="form-group">
+                       <label for="membership"> Membership:</label>
+                       <br>
+                       <form action="/action_page.php">
+                         <input type="checkbox" name="Gold" value="gold">Gold<br>
+                         <input type="checkbox" name="Silver" value="silver">Silver<br>
+                         <input type="checkbox" name="Bronze" value="bronze" checked>Bronze<br><br>
+                      </form>
+                   <div class="form-group">
+                       <label for="password"> Password:</label>
+                       <input type="password" class="form-control" id="password" name="password" required maxlength="50">
+                   </div>
+                   <div class="form-group">
+                       <label for="password"> Confirm Password:</label>
+                       <input type="password" class="form-control" id="password" name="password" required maxlength="50">
                    </div>
                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:#ADFF2F" >Log in &rarr;</button>
                </form>
