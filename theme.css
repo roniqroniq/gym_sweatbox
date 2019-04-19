@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Ubuntu',sans-serif;
+	
 	}
 .gym{
     background-size: cover;
@@ -24,7 +24,7 @@ nav li a{
 
 
 h2{
-  font-family: 'Archivo', sans-serif,!important;
+  font-family: 'Ubuntu', sans-serif,!important;
 
 }
 h4{
