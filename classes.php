@@ -31,7 +31,7 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-                  <img class="media-object" src="img/yoga2_mini.jpg" alt="...">
+                  <img class="mr-3" src="img/yoga2_mini.jpg" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -40,37 +40,91 @@ require "header.php";
               </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="container">
-<div class="row">
-    <div class="col-md-6">
-        <div class="media">
-          <div class="media-left">
-            <a href="login.php">
-              <img class="media-object" src="img/kettlebell2_mini.jpg" alt="...">
-            </a>
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Kettlebell</h4>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-          </div>
+      </div>
+        <div class="row">
+        <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <a href="login.php">
+                  <img class="mr-3" src="img/yoga3_mini.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Kettlebell</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div class="media">
-          <div class="media-left">
-            <a href="login.php">
-              <img class="media-object" src="img/girl_bike_mini.jpg">
-            </a>
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Spin Classes</h4>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-          </div>
+        <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <a href="login.php">
+                  <img class="mr-3" src="img/yoga3_mini.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Spin Classes</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
+            </div>
         </div>
-    </div>
-</div>
+        <div class="row">
+        <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <a href="login.php">
+                  <img class="mr-3" src="img/yoga3_mini.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Weight training</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <a href="login.php">
+                  <img class="mr-3" src="img/yoga3_mini.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Pilates</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <a href="login.php">
+                  <img class="mr-3" src="img/yoga3_mini.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Boxing</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <a href="login.php">
+                  <img class="mr-3" src="img/yoga3_mini.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Private Sessions</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
+        </div>
+      </div>
 </div>
 
 </body>
