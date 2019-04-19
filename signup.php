@@ -1,24 +1,35 @@
 <?php
   require "header.php";
  ?>
-
- <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover;">
-  <div class="container">
-    <form>
-     <div class="form-group">
-       <label for="exampleInputEmail1">Email address</label>
-       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-     </div>
-     <div class="form-group">
-       <label for="exampleInputPassword1">Password</label>
-       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-     </div>
-     <button type="submit" class="btn btn-primary">Submit</button>
-   </form>
+<body >
+ <main>
+   <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
+    <div class="container">
+      <h2>“Sweat is your fat crying.”</h2>
+    </div>
   </div>
-</div>
 
+   <div class="container">
+       <div class="row">
+           <div class="col-md-6 col-md-offset-3">
+               <h2>Contact Us</h2> Please log in using the form below. </p>
+               <form role="form" method="post" id="login_form" >
+                   <div class="form-group">
+                       <label for="name"> Name:</label>
+                       <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                   </div>
+                   <div class="form-group">
+                       <label for="email"> Email:</label>
+                       <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                   </div>
+                   <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:#ADFF2F" >Log in &rarr;</button>
+               </form>
+               <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Logged in successfully!</h3> </div>
+               <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Try again!</div>
+           </div>
+       </div>
+   </div>
+</body>
 <?php
  require "footer.php"
 ?>
