@@ -22,6 +22,10 @@ require "header.php";
                         <input type="email" class="form-control" id="email" name="email" required maxlength="50">
                     </div>
                     <div class="form-group">
+                        <label for="mobile"> Mobile number:</label>
+                        <input type="email" class="form-control" id="mobile" name="mobile" required maxlength="50">
+                    </div>
+                    <div class="form-group">
                         <label for="name"> Message:</label>
                         <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
                     </div>
