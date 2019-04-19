@@ -5,63 +5,124 @@ require "header.php";
  <main>
    <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
     <div class="container">
-      <h2>“i like to meditade. But I get rid of my stress at the gym.”</h2>
+      <h2>“I like to meditade. But I get rid of my stress at the gym.”</h2>
     </div>
   </div>
   <body>
+  </head>
+  <body>
+    body {
+    		font-family: 'Varela Round', sans-serif;
+    	}
+    	.modal-login {
+    		color: #636363;
+    		width: 350px;
+    	}
+    	.modal-login .modal-content {
+    		padding: 20px;
+    		border-radius: 5px;
+    		border: none;
+    	}
+    	.modal-login .modal-header {
+    		border-bottom: none;
+    		position: relative;
+    		justify-content: center;
+    	}
+    	.modal-login h4 {
+    		text-align: center;
+    		font-size: 26px;
+    	}
+    	.modal-login  .form-group {
+    		position: relative;
+    	}
+    	.modal-login i {
+    		position: absolute;
+    		left: 13px;
+    		top: 11px;
+    		font-size: 18px;
+    	}
+    	.modal-login .form-control {
+    		padding-left: 40px;
+    	}
+    	.modal-login .form-control:focus {
+    		border-color: #00ce81;
+    	}
+    	.modal-login .form-control, .modal-login .btn {
+    		min-height: 40px;
+    		border-radius: 3px;
+    	}
+    	.modal-login .hint-text {
+    		text-align: center;
+    		padding-top: 10px;
+    	}
+    	.modal-login .close {
+            position: absolute;
+    		top: -5px;
+    		right: -5px;
+    	}
+    	.modal-login .btn {
+    		background: #00ce81;
+    		border: none;
+    		line-height: normal;
+    	}
+    	.modal-login .btn:hover, .modal-login .btn:focus {
+    		background: #00bf78;
+    	}
+    	.modal-login .modal-footer {
+    		background: #ecf0f1;
+    		border-color: #dee4e7;
+    		text-align: center;
+    		margin: 0 -20px -20px;
+    		border-radius: 5px;
+    		font-size: 13px;
+    		justify-content: center;
+    	}
+    	.modal-login .modal-footer a {
+    		color: #999;
+    	}
+    	.trigger-btn {
+    		display: inline-block;
+    		margin: 100px auto;
+    	}
+    </style>
+    </head>
+    <body>
+    <div class="text-center">
+    	<!-- Button HTML (to Trigger Modal) -->
+    	<a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Login Modal</a>
+    </div>
 
-  	<div class="limiter">
-  		<div class="container-login100">
-  			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-  				<form class="login100-form validate-form flex-sb flex-w">
-  					<span class="login100-form-title p-b-32">
-  						Account Login
-  					</span>
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+    	<div class="modal-dialog modal-login">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h4 class="modal-title">Member Login</h4>
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    			</div>
+    			<div class="modal-body">
+    				<form action="/examples/actions/confirmation.php" method="post">
+    					<div class="form-group">
+    						<i class="fa fa-user"></i>
+    						<input type="text" class="form-control" placeholder="Username" required="required">
+    					</div>
+    					<div class="form-group">
+    						<i class="fa fa-lock"></i>
+    						<input type="password" class="form-control" placeholder="Password" required="required">
+    					</div>
+    					<div class="form-group">
+    						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+    					</div>
+    				</form>
 
-  					<span class="txt1 p-b-11">
-  						Username
-  					</span>
-  					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-  						<input class="input100" type="text" name="username" >
-  						<span class="focus-input100"></span>
-  					</div>
-
-  					<span class="txt1 p-b-11">
-  						Password
-  					</span>
-  					<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
-  						<span class="btn-show-pass">
-  							<i class="fa fa-eye"></i>
-  						</span>
-  						<input class="input100" type="password" name="pass" >
-  						<span class="focus-input100"></span>
-  					</div>
-
-  					<div class="flex-sb-m w-full p-b-48">
-  						<div class="contact100-form-checkbox">
-  							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-  							<label class="label-checkbox100" for="ckb1">
-  								Remember me
-  							</label>
-  						</div>
-
-  						<div>
-  							<a href="#" class="txt3">
-  								Forgot Password?
-  							</a>
-  						</div>
-  					</div>
-
-  					<div class="container-login100-form-btn">
-  						<button class="login100-form-btn">
-  							Login
-  						</button>
-  					</div>
-
-  				</form>
-  			</div>
-  		</div>
-  	</div>
+    			</div>
+    			<div class="modal-footer">
+    				<a href="#">Forgot Password?</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    </body>
   <?php
  require "footer.php";
    ?>
