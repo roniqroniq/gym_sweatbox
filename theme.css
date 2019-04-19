@@ -1,26 +1,25 @@
-
-.gym
-	{
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu',sans-serif;
+	}
+.gym{
     background-size: cover;
     position: relative;
-
-
-width: 100%;
-height: 100vh;
-z-index:0;
-	}
-	.log
-	{
+		width: 100%;
+		height: 100vh;
+		z-index:0;
+}
+	.log{
 		position: absolute;
 		top: 40%;
     left: 39%;
     z-index: 1;
-	}
+}
 
 nav li a{
     font-family: 'Archivo', sans-serif,!important;
     z-index: 0;
-
 }
 
 
