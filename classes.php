@@ -13,13 +13,11 @@ require "header.php";
      All photos should be stored in a folder not on the database.
     The link brings the logged in user to the relevant class page (using GET) and sends them to the login page.</p>
     <div class="container">
-
     <div class="row">
         <div class="col-md-6">
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
-
                   <img class="mr-3" src="img/yoga3_mini.jpg" alt="...">
                 </a>
               </div>
