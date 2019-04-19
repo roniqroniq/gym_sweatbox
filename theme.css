@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	
 	}
 .gym{
     background-size: cover;
@@ -16,7 +15,6 @@
     left: 39%;
     z-index: 1;
 }
-
 nav li a{
     font-family: 'Archivo', sans-serif,!important;
     z-index: 0;
@@ -192,7 +190,6 @@ background-color:grey;
 #icoTwitter{
   background-color:grey;
 }
-
 
 @media only screen and (max-width: 600px) {
   body {
