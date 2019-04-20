@@ -20,7 +20,7 @@ require "header.php";
           <div class="carousel-caption text-left">
             <h1>Great Value for Money.</h1>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            <p><a class="btn btn-lg btn-primary" href="signup.php" role="button">Sign up today</a></p>
           </div>
         </div>
       </div>
@@ -31,12 +31,12 @@ require "header.php";
           <div class="carousel-caption">
             <h1>Excellent classes and facilities!</h1>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="about.php" role="button">Learn more</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        
+
 
         <img src="img/three.jpg" alt="Smiley face" height="42" width="42">
 
@@ -44,7 +44,7 @@ require "header.php";
           <div class="carousel-caption text-right">
             <h1>Would highly recommend Sweat Box.</h1>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            <p><a class="btn btn-lg btn-primary" href="gallery.php" role="button">Browse gallery</a></p>
           </div>
         </div>
       </div>
