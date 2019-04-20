@@ -29,11 +29,16 @@ require "header.php";
                         <label for="name"> Message:</label>
                         <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs"a href="#" style="background-color:#ADFF2F" >Send &rarr;</button>
+                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs"a href="#" style="background-color:grey">Send</button>
                 </form>
                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
             </div>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="container">
+                <img class="img-fluid img-thumbnail" src="img/gallery_5.jpg">
+              </div>
+        </div>
         </div>
     </div>
 </body>
