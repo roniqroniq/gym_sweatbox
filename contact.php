@@ -34,6 +34,11 @@ require "header.php";
                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
             </div>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="container">
+                <img class="img-fluid img-thumbnail" src="img/gallery_5.jpg">
+              </div>
+        </div>
         </div>
     </div>
 </body>
