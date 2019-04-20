@@ -22,7 +22,7 @@ require "header.php";
                         <label for="password"> Password:</label>
                         <input type="password" class="form-control" id="password" name="password" required maxlength="50">
                     </div>
-                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:#ADFF2F" >Log in &rarr;</button>
+                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:grey" >Log in</button>
                 </form>
                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Logged in successfully!</h3> </div>
                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Try again!</div>
