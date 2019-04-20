@@ -298,6 +298,7 @@ a.gp-btn, button.gp-btn, span.gp-btn {
 .job-title{
 	clear: both;
 	line-height: 1.5;
+	padding-top: 10%;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	font-weight: 900;

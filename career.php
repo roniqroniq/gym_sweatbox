@@ -13,7 +13,7 @@ require "header.php";
 
   <section class="container">
 
-	<h2 class="text-center purple">Career Paths</h2>
+	<h2 class="text-center">Career Paths</h2>
 		<div class="row pd-t pd-t--md">
 
 
@@ -73,11 +73,16 @@ require "header.php";
 					</div>
 					</a>
 				</div>
-
-
-
 		</div>
 	</section>
+<br/><br/>
+  <section class="container">
+
+	<h2 class="text-center">Front of House Job Description</h2>
+		<div class="row pd-t pd-t--md">
+
+    </div>
+  </section>
  <?php
 require "footer.php";
   ?>
