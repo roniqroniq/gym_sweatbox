@@ -2,6 +2,36 @@
 	margin: 0;
 	padding: 0;
 	}
+.fa-anchor{
+  padding:10px;
+}
+
+.fa-heart{
+  padding:10px;
+}
+
+.fa-user{
+  padding:10px;
+}
+.fa-calendar{
+  padding:10px;
+}
+
+.fa-check{
+  padding:10px;
+}
+.fa-building{
+  padding:10px;
+}
+
+
+p.text-center a{
+  color: grey;
+}
+
+.card{
+  margin-top:20px ;
+}
 .gym{
     background-size: cover;
     position: relative;
