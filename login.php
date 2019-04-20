@@ -27,6 +27,11 @@ require "header.php";
                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Logged in successfully!</h3> </div>
                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Try again!</div>
             </div>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="container">
+                <img class="img-fluid img-thumbnail" src="img/gallery_6.jpg">
+              </div>
+        </div>
         </div>
     </div>
 </body>
