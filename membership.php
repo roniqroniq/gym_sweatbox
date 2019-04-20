@@ -68,7 +68,7 @@ include "header.php";
           <li>Choose 2 classes</li>
           <li>Stay Healthy</li>
         </ul>
-        <a href="signup.php"  class="btn btn-lg btn-block btn-primary">Sign up for Bronze</a>
+        <a href="signup.php"  class="btn btn-lg btn-block btn-primary btn-mem">Sign up for Bronze</a>
       </div>
     </div>
   </div>

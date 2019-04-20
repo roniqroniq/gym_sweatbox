@@ -232,6 +232,10 @@ background-color:grey;
 }
 }
 
+.btn-mem{
+	background: grey;
+	border: 2px solid black;
+}
 
 /* Styling for Careers Section */
 .job-card {
