@@ -230,3 +230,10 @@ background-color:grey;
     background-color: ;
 
 }
+
+.job-card {
+    cursor: pointer;
+    box-shadow: 0 15px 15px 0 rgba(0,0,0,.1);
+    padding: 20px;
+    position: relative;
+}
