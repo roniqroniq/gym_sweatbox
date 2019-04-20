@@ -230,10 +230,61 @@ background-color:grey;
     background-color: ;
 
 }
+}
 
 .job-card {
     cursor: pointer;
     box-shadow: 0 15px 15px 0 rgba(0,0,0,.1);
     padding: 20px;
     position: relative;
+}
+.pd-t--md {
+    padding-top: 3em;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 992px)
+.job-card:hover .gp-btn {
+    opacity: 1;
+}
+
+span.gp-btn--purple:hover {
+    background: #fff;
+    color: #7C2582;
+}
+
+.job-card .gp-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 1;
+    padding: 8px 30px;
+    font-size: 12px;
+}
+a.gp-btn--purple, button.gp-btn--purple, span.gp-btn--purple {
+    color: #fff;
+    background: #7C2582;
+    border: 2px solid #7C2582;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+a.gp-btn, button.gp-btn, span.gp-btn {
+    border-bottom-left-radius: 30px;
+    color: inherit;
+    display: inline-block;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    transition: background .3s,color .3s,border .3s;
 }
