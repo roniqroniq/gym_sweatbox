@@ -232,6 +232,8 @@ background-color:grey;
 }
 }
 
+
+/* Styling for Careers Section */
 .job-card {
     cursor: pointer;
     box-shadow: 0 15px 15px 0 rgba(0,0,0,.1);
@@ -253,7 +255,7 @@ background-color:grey;
 
 span.gp-btn--purple:hover {
     background: #fff;
-    color: #7C2582;
+    color: black;
 }
 
 .job-card .gp-btn {
@@ -268,8 +270,8 @@ span.gp-btn--purple:hover {
 }
 a.gp-btn--purple, button.gp-btn--purple, span.gp-btn--purple {
     color: #fff;
-    background: #7C2582;
-    border: 2px solid #7C2582;
+    background: grey;
+    border: 2px solid black;
 }
 *, :after, :before {
     box-sizing: inherit;
@@ -277,9 +279,9 @@ a.gp-btn--purple, button.gp-btn--purple, span.gp-btn--purple {
 
 a.gp-btn, button.gp-btn, span.gp-btn {
     border-bottom-left-radius: 30px;
-    color: inherit;
+    color: white;
     display: inline-block;
-    font-family: Montserrat,sans-serif;
+    font-family: Archivo, sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 20px;
@@ -287,4 +289,16 @@ a.gp-btn, button.gp-btn, span.gp-btn {
     padding: 12px 40px;
     text-transform: uppercase;
     transition: background .3s,color .3s,border .3s;
+}
+
+.jobs a{
+	color: black;
+}
+
+.job-title{
+	clear: both;
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	font-weight: 900;
 }

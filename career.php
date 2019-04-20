@@ -24,7 +24,8 @@ require "header.php";
 							<i class="fa fa-location-arrow" aria-hidden="true"></i>
 							All Locations
 						</h6>
-						<h5>Front of House</h5>						<h6 class="normal">€ POA</h6>
+						<h5 class="job-title">Front of House</h5>
+            <h6 class="normal">€ POA</h6>
 						<span class="gp-btn gp-btn--purple">Read more</span>
 					</div>
 					</a>
@@ -38,7 +39,7 @@ require "header.php";
 							<i class="fa fa-location-arrow" aria-hidden="true"></i>
 							All Locations
 						</h6>
-						<h5>Lifeguard </h5>						<h6 class="normal">€ POA</h6>
+						<h5 class="job-title">Lifeguard </h5>						<h6 class="normal">€ POA</h6>
 						<span class="gp-btn gp-btn--purple">Read more</span>
 					</div>
 					</a>
@@ -52,7 +53,7 @@ require "header.php";
 							<i class="fa fa-location-arrow" aria-hidden="true"></i>
 							All Locations
 						</h6>
-						<h5>Swimming Instructor</h5>						<h6 class="normal">€ POA</h6>
+						<h5 class="job-title">Swimming Instructor</h5>						<h6 class="normal">€ POA</h6>
 						<span class="gp-btn gp-btn--purple">Read more</span>
 					</div>
 					</a>
@@ -67,7 +68,7 @@ require "header.php";
 							<i class="fa fa-location-arrow" aria-hidden="true"></i>
 							All Locations
 						</h6>
-						<h5>Fitness Instructor</h5>						<h6 class="normal">€ POA</h6>
+					  <h5 class="job-title">Fitness Instructor</h5>						<h6 class="normal">€ POA</h6>
 						<span class="gp-btn gp-btn--purple">Read more</span>
 					</div>
 					</a>
