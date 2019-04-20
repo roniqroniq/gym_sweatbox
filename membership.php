@@ -38,7 +38,7 @@ include "header.php";
           <li>Choose any number of classes</li>
           <li>Free Personal Trainer once per month</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Sign up for Gold</button>
+        <a href="signup.php"  class="btn btn-lg btn-block btn-primary">Sign up for Gold</a>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -53,7 +53,7 @@ include "header.php";
           <li>Choose 3 classes</li>
           <li>Free Personal Trainer once per month</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Sign up for Silver</button>
+        <a href="signup.php"  class="btn btn-lg btn-block btn-primary">Sign up for Silver</a>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -68,7 +68,7 @@ include "header.php";
           <li>Choose 2 classes</li>
           <li>Stay Healthy</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Sign up for Bronze</button>
+        <a href="signup.php"  class="btn btn-lg btn-block btn-primary">Sign up for Bronze</a>
       </div>
     </div>
   </div>
