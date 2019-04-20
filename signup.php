@@ -63,7 +63,8 @@
            </div>
            <div class="col-md-6 col-md-offset-3">
              <div class="container">
-               <img class="img-fluid img-thumbnail" src="img/gallery_4.jpg"></div>
+               <img class="img-fluid img-thumbnail" src="img/gallery_4.jpg">
+             </div>
        </div>
    </div>
 </body>
