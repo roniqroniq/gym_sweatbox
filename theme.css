@@ -307,3 +307,43 @@ a.gp-btn, button.gp-btn, span.gp-btn {
 	margin-bottom: 15px;
 	font-weight: 900;
 }
+
+/*Forum */
+.post {
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #c9cccd;
+    margin-bottom: 20px;
+}
+.pull-left {
+    float: left!important;
+}
+
+.post .wrap-ut {
+    width: 85%;
+}
+
+.post .userinfo {
+    width: 15%;
+    padding: 20px 0 15px 15px;
+}
+
+.post .avatar {
+    width: 37px;
+    margin-left: 5px;
+}
+
+.avatar {
+    position: relative;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
