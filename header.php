@@ -64,8 +64,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="membership.php">LEVELS</a>
-                    <a class="dropdown-item" href="testimonial.php">TESTIMONIALS</a>
-                    <a class="dropdown-item" href="#">FORUM</a>
+                   
                     <a class="dropdown-item" href="events.php">EVENTS</a>
                   </div>
                 </li>
