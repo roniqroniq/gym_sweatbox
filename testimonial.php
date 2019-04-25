@@ -2,60 +2,14 @@
 require "header.php";
  ?>
 
-
+<div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
+    <div class="container">
+      <h2>“Sweat is your fat crying.”</h2>
+    </div>
+  </div>
 
  <main role="main">
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-
-        <img src="img/one1.jpg" alt="Gym Pic" height="42" width="42">
-        <div class="container">
-          <div class="carousel-caption text-left">
-            <h1>"Great Value for Money" <br/> <i>Stephen, Silver member.</i></h1>
-
-            <p><a class="btn btn-lg btn-primary" href="signup.php" role="button">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-
-        <img src="img/two2.jpg" alt="Gym Pic" height="42" width="42">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>"Excellent classes and facilities!" <br/> <i> Laura, Gold member.</i></h1>
-            <p><a class="btn btn-lg btn-primary" href="about.php" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-
-
-        <img src="img/three.jpg" alt="Smiley face" height="42" width="42">
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>"Would highly recommend Sweat Box!"<br/> <i>David, Bronze member.</i></h1>
-            <p><a class="btn btn-lg btn-primary" href="gallery.php" role="button">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 
   <hr class="featurette-divider">
 
@@ -96,7 +50,26 @@ require "header.php";
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
+    <script>
+  $( window ).on( "load", function() {
+      mainNav();
+      $(window).scroll(function() {
+         mainNav();
+      });
+      function mainNav() {
+          var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+         if (top >1) $('.navy').stop().animate({
+            "opacity": '0',
+              "top": '0'
+           });
+         else $('.navy').stop().animate({
+              "top": '1',
+             "opacity": '1'
+         });
 
+       }
+       });
+  </script>
   </div><!-- /.container -->
 </main>
  <?php
