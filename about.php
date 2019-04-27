@@ -4,31 +4,22 @@ include "header.php";
 <html>
 <body>
 
-
-
-
-
-<div class="jumbotron jumbotron-fluid" style="background-image: url(gym-banner.jpg); background-size: cover; color: white;">
-   <div class="container">
-       <br>
-     <h2>“Those who think they have not time for bodily exercise will sooner or later have to find time for illness.”</h2>
+  <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
+     <div class="container">
+       <h2>“Those who think they have not time for bodily exercise will sooner or later have to find time for illness.”</h2>
+     </div>
    </div>
- </div>
-</div>
 
-
-
-
-
-
+   <div class="under-border" style="background: #CFDE00"></div>
+   	<div class="under-border under-border--opaic" style="background: #CFDE00"></div>
 
 
     <h1 class="display-6"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">About Us</h1>
     <br>
-     
+
    <div class="us"style="color:grey;padding:7%;letter-spacing.7em;font-size:120%;">
 <p> We are a humble group of personal trainers that first started out in a small Irish town. From there we have grown to one of the biggest gym chains in Ireland and the fatest growing in Europe.
-  Our unique gym layout and combination of mindfulness design ensures that our customers not only maintain a healthy body but also a healthy mind. We also have onsite strenght and conditioning coaches who assit in 
+  Our unique gym layout and combination of mindfulness design ensures that our customers not only maintain a healthy body but also a healthy mind. We also have onsite strenght and conditioning coaches who assit in
   any training issues or help you may need.
 
   In addition to this we also offer nutritional advise and hold monthly and weekly talks ranging from supplements to nutrion best practices.For more information check out our <a href="events.php">events page</a> or drop in to reception.
@@ -48,12 +39,12 @@ include "header.php";
                    <br>
                    <br>
                    <br>
-                   
+
                   </div>
                </div>
             </div>
-            
-            
+
+
             <div class="row">
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
@@ -61,16 +52,16 @@ include "header.php";
                      <i class="fas fa-building fa-5x"></i>
                      <h4>3 FLOORS  </h4>
                      <p>At sweat box we have three floors and each floor containing different sections to train</p>
-                  
+
                   </div>
 
                </div>
-               <br> 
+               <br>
                <br>
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
                   <div class="single-service"style="padding:20%;text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">
-                  <i class="fa fa-check fa-5x"></i> 
+                  <i class="fa fa-check fa-5x"></i>
                      <h4> EQUIPMENT </h4>
                      <p>At sweat box we have world class equipment that is maintained and updated every year. </p>
                   </div>
@@ -79,7 +70,7 @@ include "header.php";
                   <!-- Single Service -->
                   <div class="single-service"style="padding:20%;text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">
                   <i class="fa fa-anchor fa-5x"></i>
-                  
+
                      <h4>POOL</h4>
                      <p>We have a 25 meter pool as well as a steam room ,sauna and jacuzzi </p>
                   </div>
@@ -87,7 +78,7 @@ include "header.php";
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
                   <div class="single-service"style="padding:20%;text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">
-                  <i class="fa fa-heart fa-5x"></i> 
+                  <i class="fa fa-heart fa-5x"></i>
                      <h4>MINDFULLNESS</h4>
                      <p>We have a special mindfullness area where you can go to meditate and take time for you </p>
                   </div>
