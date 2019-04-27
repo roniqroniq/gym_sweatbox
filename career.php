@@ -132,6 +132,22 @@ require "header.php";
     </span></p>
     </div>
   </div>
+  <!-- Upload CV button -->
+
+
+
+  <form method="post" class="file-uploader" action="" enctype="multipart/form-data">
+    <div class="file-uploader__message-area">
+      <p>Upload your CV</p>
+    </div>
+    <div class="file-chooser">
+      <input class="file-chooser__input" type="file">
+    </div>
+    <input class="file-uploader__submit-button" type="submit" value="Upload">
+  </form>
+
+
+      <!-- Upload CV button End -->
   </section>
 
   <section class="container">
@@ -193,6 +209,8 @@ require "header.php";
     </div>
   </div>
   </section>
+
+
  <?php
 require "footer.php";
   ?>
