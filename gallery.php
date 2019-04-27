@@ -10,6 +10,10 @@ require "header.php";
     </div>
   </div>
   <div class="us"style="color:black;padding:7%;letter-spacing.7em;font-size:120%;">
+            <div class="container">
+          <h3> Fancy some nice pictures? <br> Go on, scroll down... </h3>
+        </div>
+    		<div class="row pd-t pd-t--md">
   <div class="gallery" id="gallery">
     <div class="container">
       <h3>Yoga / Boxingyoga</h3>
