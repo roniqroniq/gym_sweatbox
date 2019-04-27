@@ -132,22 +132,24 @@ require "header.php";
     </span></p>
     </div>
   </div>
+
+
   <!-- Upload CV button -->
 
-
-
-  <form method="post" class="file-uploader" action="" enctype="multipart/form-data">
-    <div class="file-uploader__message-area">
-      <p>Upload your CV</p>
-    </div>
-    <div class="file-chooser">
-      <input class="file-chooser__input" type="file">
-    </div>
-    <input class="file-uploader__submit-button" type="submit" value="Upload">
-  </form>
-
-
+  <div class="container">
+      <div class="row justify-content-center">
+      <form action="upload-manager.php" method="post" enctype="multipart/form-data">
+          <h2>Is that you? Upload your CV!</h2>
+          <label for="fileSelect">Filename:</label>
+          <input type="file" name="file" id="fileSelect">
+          <input type="submit" name="submit" value="Upload">
+          <p><strong>Note:</strong> Only .pdf format allowed to a max size of 5 MB.</p>
+      </form>
+  </div>
+  </div>
       <!-- Upload CV button End -->
+
+
   </section>
 
   <section class="container">
@@ -209,6 +211,20 @@ require "header.php";
     </div>
   </div>
   </section>
+  <!-- Upload CV button -->
+
+  <div class="container">
+      <div class="row justify-content-center">
+      <form action="upload-manager.php" method="post" enctype="multipart/form-data">
+          <h2>Is that you? Upload your CV!</h2>
+          <label for="fileSelect">Filename:</label>
+          <input type="file" name="file" id="fileSelect">
+          <input type="submit" name="submit" value="Upload">
+          <p><strong>Note:</strong> Only .pdf format allowed to a max size of 5 MB.</p>
+      </form>
+  </div>
+  </div>
+      <!-- Upload CV button End -->
 
 
  <?php
