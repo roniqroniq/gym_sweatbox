@@ -13,11 +13,7 @@ include "header.php";
 <head>
 </head>
 <body>
-<div class="row">
-  <div class="col-12">
-    <div id="memimage1"></div>
-  </div>
-</div>
+
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">Membership Levels</h1>
@@ -38,7 +34,7 @@ include "header.php";
           <li>Choose any number of classes</li>
           <li>Free Personal Trainer once per month</li>
         </ul>
-        <a href="signup.php"  class="btn btn-lg btn-block btn-primary">Sign up for Gold</a>
+        <a href="signup.php"  class="btn btn-lg btn-block btn-dark">Sign up for Gold</a>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -53,7 +49,7 @@ include "header.php";
           <li>Choose 3 classes</li>
           <li>Free Personal Trainer once per month</li>
         </ul>
-        <a href="signup.php"  class="btn btn-lg btn-block btn-primary">Sign up for Silver</a>
+        <a href="signup.php"  class="btn btn-lg btn-block btn-dark">Sign up for Silver</a>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -68,7 +64,7 @@ include "header.php";
           <li>Choose 2 classes</li>
           <li>Stay Healthy</li>
         </ul>
-        <a href="signup.php"  class="btn btn-lg btn-block btn-primary btn-mem">Sign up for Bronze</a>
+        <a href="signup.php"  class="btn btn-lg btn-block btn-dark btn-mem">Sign up for Bronze</a>
       </div>
     </div>
   </div>
