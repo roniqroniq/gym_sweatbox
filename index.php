@@ -10,8 +10,8 @@ include "header.php";
 <body>
 
 <div class="box" style="position: relative; left: 0; top: 0;">
-<img src="img/kettlebell.jpg" class="gym"/>
-    <img src="img/logo.png" class="log"/>
+<img src="kettlebell.jpg" class="gym"/>
+    <img src="logo.png" class="log"/>
 </div>
 
 <br>
