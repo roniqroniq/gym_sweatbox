@@ -10,14 +10,15 @@ require "header.php";
   <div class="under-border" style="background: #CFDE00"></div>
   	<div class="under-border under-border--opaic" style="background: #CFDE00"></div>
 
-
-  <section class="container">
-
-	<h2 class="text-center">Career Paths</h2>
+<div class="us"style="color:black;">
+    <div class="container">
+      <h3> Join the Family! <br> We want to be the best, to do that our employees must be the best. <br> So they deserve to be treated that way. </h3>
+    </div>
 		<div class="row pd-t pd-t--md">
 
-
-				<div class="col-md-4 jobs">
+<div class="container">
+  <div class="row">
+				<div class="col-md-6 jobs">
 					<a href="#FrontofHouse">
 					<div class="job-card">
 						<h6 class="normal purple">
@@ -32,7 +33,7 @@ require "header.php";
 				</div>
 
 
-				<div class="col-md-4 jobs">
+				<div class="col-md-6 jobs">
 					<a href="#Lifeguard">
 					<div class="job-card">
 						<h6 class="normal purple">
@@ -46,7 +47,7 @@ require "header.php";
 				</div>
 
 
-				<div class="col-md-4 jobs">
+				<div class="col-md-6 jobs">
 					<a href="#Swiminst">
 					<div class="job-card">
 						<h6 class="normal purple">
@@ -61,7 +62,7 @@ require "header.php";
 									<div class="clearfix hidden-xs hidden-sm"></div>
 
 
-				<div class="col-md-4 jobs">
+				<div class="col-md-6 jobs">
 					<a href="#Fitnessinst">
 					<div class="job-card">
 						<h6 class="normal purple">
