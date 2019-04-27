@@ -1,43 +1,53 @@
 <?php
- include('connect.php') ;
+  include('connect.php') ;
   require "header.php";
  ?>
 <body >
- <main>
-   <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
+  <main>
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
     <div class="container">
       <h2>“Sweat is your fat crying.”</h2>
     </div>
   </div>
 
-   <div class="container">
-       <div class="row">
-           <div class="col-md-6 col-md-offset-3">
-               <h2>Sign Up</h2> Please sign up using the form below. </p>
-               <form id="myForm" action="signup.php" method="POST" >
-	               
-                   <div class="form-group">
-                       <label for="name"><h5>Name:</h5></label>
-                       <input type="text" class="form-control" id="name" name="name"  required maxlength="50">
-                   </div>
-                   <div class="form-group">
-                       <label for="email"><h5>Email:</h5></label>
-                       <input type="email" class="form-control" id="email" name="email" required maxlength="50">
-                   </div>
-                   <div class="form-group">
-                       <label for="mobile"><h5>Mobile number:</h5></label>
-                       <input type="text" class="form-control" id="mobile" name="mobile" required maxlength="50">
-                   </div>
+  <div class="container">
+  <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Sign Up</h2> Please sign up using the form below. </p>
+          <form id="myForm" action="signup.php" method="POST" >
+
+        <div class="form-group">
+          <label for="name"><h5>Name:</h5></label>
+            <input type="text" class="form-control" id="name" name="name"  required maxlength="50">
+          </div>
+          <div class="form-group">
+            <label for="email"><h5>Email:</h5></label>
+            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+          </div>
+          <div class="form-group">
+          <label for="mobile"><h5>Mobile number:</h5></label>
+            <input type="text" class="form-control" id="mobile" name="mobile" required maxlength="50">
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="membership"value ="bronze" checked>BRONZE</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="membership" value="silver">SILVER</label>
+</div>
+<div class="radio disabled">
+  <label><input type="radio" name="membership" value ="gold" >GOLD</label>
+</div>
+
                    <!-- <div class="form-group">
                        <label for="membership"><h5>Membership:</h5></label>
                        <br>
                        <form id="myForm" action="signup.php" method="POST" >
-                         <input type="checkbox" name="Gold" value="gold">Gold<br>
-                         <input type="checkbox" name="Silver" value="silver">Silver<br>
-                         <input type="checkbox" name="Bronze" value="bronze" checked>Bronze<br><br>
+                         <input type="checkbox" name="membership" value="gold">Gold<br>
+                         <input type="checkbox" name="membership" value="silver">Silver<br>
+                         <input type="checkbox" name="membership" value="bronze" checked>Bronze<br><br>
                       </form>
-                   </div> -->
-                   <!-- <div class="form-group">
+                   </div>  -->
+                   <div class="form-group">
                        <label for="membership"><h5>Classes:</h5></label>
                        <br>
                        <form action="">
@@ -49,7 +59,7 @@
                          <input type="checkbox" name="Pilates" value="pilates">Pilates<br>
                          <input type="checkbox" name="Boxing" value="boxing">Boxing<br>
                     </form>
-                  </div> -->
+                  </div> 
                    <div class="form-group">
                        <label for="password"><h5>Password:</h5></label>
                        <input type="password" class="form-control" id="password" name="password" required maxlength="50">
@@ -112,6 +122,13 @@ if(empty($_POST['name'])){
             $errors[] = "invalid Mobile number !";
         }
      }
+     if(empty($_POST['membership'])){
+      $errors[]= 'Membership  is required.';
+      }
+      else {
+      $membership =trim($_POST['membership']);
+      }
+   
      if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["cpassword"])) {
       $password = test_input($_POST["password"]);
       $cpassword = test_input($_POST["cpassword"]);
@@ -142,7 +159,8 @@ if(empty($_POST['name'])){
 
      if (empty($errors)) { // if no errors process input
         require('connect.php');
-         $query = "INSERT INTO user (user_name,user_email,user_password) VALUES ('$name','$email','$password')";
+
+         $query = "INSERT INTO user (user_name,user_email,user_password,role_id) VALUES ('$name','$email','$password', 2);";
          
           $result = @mysqli_query($db_connection, $query);
             if ($result){
