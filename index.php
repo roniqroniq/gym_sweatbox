@@ -5,13 +5,13 @@ include "header.php";
 
 
 <html>
-  
-    
-<body>  
+
+
+<body>
 
 <div class="box" style="position: relative; left: 0; top: 0;">
-<img src="kettlebell.jpg" class="gym"/>
-    <img src="logo.png" class="log"/>
+<img src="img/kettlebell.jpg" class="gym"/>
+    <img src="img/logo.png" class="log"/>
 </div>
 
 <br>
@@ -30,16 +30,16 @@ include "header.php";
               <div class ="text-center">
     					<p class="card-text "style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     					<a href="about.php" class="btn btn-dark"style="background-color:grey;colour:white">MORE</a>
-                 </div>   
+                 </div>
              </div>
     			</div>
-         
+
     		</div>
         </div>
         <br>
         <div class="card border-0">
     	<div class="card border-0 shadow col-md-12 p-3">
-      
+
     		<div class="row ">
             <div class="col-md-4">
     				<img class="w-100" src="girls_jump.jpg"style ="width:500px;height:250px;margin:5%;">
@@ -50,7 +50,7 @@ include "header.php";
               <div class="text-center">
     					<p class="card-text"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     					<a href="#" class="btn btn-dark" style="background-color:grey">JOIN</a>
-                   
+
               </div>
     				</div>
     			</div>
@@ -71,12 +71,12 @@ include "header.php";
                    <br>
                    <br>
                    <br>
-                   
+
                   </div>
                </div>
             </div>
-            
-            
+
+
             <div class="row">
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
@@ -84,16 +84,16 @@ include "header.php";
                      <i class="fas fa-building fa-5x"></i>
                      <h4>3 FLOORS  </h4>
                      <p>At sweat box we have three floors and each floor containing different sections to train</p>
-                  
+
                   </div>
 
                </div>
-               <br> 
+               <br>
                <br>
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
                   <div class="single-service"style="padding:20%;text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">
-                  <i class="fa fa-check fa-5x"></i> 
+                  <i class="fa fa-check fa-5x"></i>
                      <h4> EQUIPMENT </h4>
                      <p>At sweat box we have world class equipment that is maintained and updated every year. </p>
                   </div>
@@ -102,7 +102,7 @@ include "header.php";
                   <!-- Single Service -->
                   <div class="single-service"style="padding:20%;text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">
                   <i class="fa fa-anchor fa-5x"></i>
-                  
+
                      <h4>POOL</h4>
                      <p>We have a 25 meter pool as well as a steam room ,sauna and jacuzzi </p>
                   </div>
@@ -110,7 +110,7 @@ include "header.php";
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
                   <div class="single-service"style="padding:20%;text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">
-                  <i class="fa fa-heart fa-5x"></i> 
+                  <i class="fa fa-heart fa-5x"></i>
                      <h4>MINDFULLNESS</h4>
                      <p>We have a special mindfullness area where you can go to meditate and take time for you </p>
                   </div>
@@ -141,7 +141,7 @@ include "header.php";
 <div class="jumbotron jumbotron-fluid"style="font-family: 'Roboto', sans-serif,!important;color:grey">
   <div class="container">
     <h1 class="display-4">"IF YOU FEEL LIKE STOPPING , THINK ABOUT WHY YOU STARTED."</h1>
-   
+
   </div>
 </div>
 </div>
@@ -167,7 +167,7 @@ $( window ).on( "load", function() {
 
  }
      });
-   
+
 
 
 
