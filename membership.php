@@ -1,24 +1,19 @@
 <?php
 include "header.php";
 ?>
-
+<body>
 <main>
   <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
    <div class="container">
      <h2>“Those who think they have not time for bodily exercise will sooner or later have to find time for illness.”</h2>
    </div>
  </div>
-</main>
-<html>
-<head>
-</head>
-<body>
+<div class="us"style="color:black;">
+    <div class="container">
+      <h3>Membership Levels<br> Join the Sweat Box Club by choose from one of our three membership levels: </h3>
+    </div>
+		<div class="row pd-t pd-t--md">
 
-
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Membership Levels</h1>
-  <p class="lead">Join the Sweat Box Club by choose from one of our three membership levels; Gold, Silver, Bronze.</p>
-</div>
 
 <div class="container">
   <div class="card-deck mb-3 text-center">
@@ -91,7 +86,7 @@ include "header.php";
        }
        });
   </script>
-
+</main>
 </body>
 </html>
 
