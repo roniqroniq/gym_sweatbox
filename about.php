@@ -13,9 +13,10 @@ include "header.php";
    <div class="under-border" style="background: #CFDE00"></div>
    	<div class="under-border under-border--opaic" style="background: #CFDE00"></div>
 
-
-    <h1 class="display-6"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">About Us</h1>
-    <br>
+    <div class="container">
+      <h3> Welcome! <br> If you’re looking for the best gym in Dublin look no further – we have what you need. </h3>
+    </div>
+		<div class="row pd-t pd-t--md">
 
    <div class="us"style="color:grey;padding:7%;letter-spacing.7em;font-size:120%;">
 <p> We are a humble group of personal trainers that first started out in a small Irish town. From there we have grown to one of the biggest gym chains in Ireland and the fatest growing in Europe.
