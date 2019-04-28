@@ -3,7 +3,7 @@
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check if file was uploaded without errors
     if(isset($_FILES["photo"]) && $_FILES["photo"]["error"] == 0){
-        $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg");
+        $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "pdf" =>"application/pdf");
         $filename = $_FILES["photo"]["name"];
         $filetype = $_FILES["photo"]["type"];
         $filesize = $_FILES["photo"]["size"];
