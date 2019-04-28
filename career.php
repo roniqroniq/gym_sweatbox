@@ -139,11 +139,11 @@ require "header.php";
   <div class="container">
       <div class="row justify-content-center">
       <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-          <h2>Is that you? Upload your CV!</h2>
+          <h2>Is that you? <br> Take a fab photo of yourself <br> and add a few words!</h2>
           <label for="fileSelect">Filename:</label>
           <input type="file" name="file" id="fileSelect">
           <input type="submit" name="submit" value="Upload">
-          <p><strong>Note:</strong> Only .pdf format allowed to a max size of 5 MB.</p>
+          <p><strong>Note:</strong> Only .jpg & .jpeg formats allowed to a max size of 5 MB.</p>
       </form>
   </div>
   </div>
