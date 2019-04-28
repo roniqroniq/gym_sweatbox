@@ -140,8 +140,9 @@ require "header.php";
   <div class="row">
       <div class="col-md-6 col-md-offset-3">
       <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-          <h4>Is that you? Upload your CV! <br> Only .pdf, .jpg and .jpeg formats allowed.
-            <br> Max size: 5 MB. </h4>
+          <h4>Is that you? Upload your CV! </h4>
+          <h6> Only .pdf, .jpg and .jpeg formats allowed. <br>
+          Max size: 5 MB. </h6>
       </div>
       <div class="col-md-6 col-md-offset-3">
           <label for="fileSelect">Filename:</label>
@@ -224,8 +225,9 @@ require "header.php";
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
         <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-            <h4>Is that you? Upload your CV! <br> Only .pdf, .jpg and .jpeg formats allowed.
-              <br> Max size: 5 MB. </h4>
+            <h4>Is that you? Upload your CV! </h4>
+            <h6> Only .pdf, .jpg and .jpeg formats allowed. <br>
+            Max size: 5 MB. </h6>
         </div>
         <div class="col-md-6 col-md-offset-3">
             <label for="fileSelect">Filename:</label>
