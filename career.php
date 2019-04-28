@@ -134,20 +134,24 @@ require "header.php";
   </div>
 
 
-  <!-- Upload CV button -->
+  <!-- Upload CV -->
 
   <div class="container">
-      <div class="row justify-content-center">
+  <div class="row">
+      <div class="col-md-6 col-md-offset-3">
       <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-          <h2>Is that you? <br> Take a fab photo of yourself <br> and add a few words!</h2>
+          <h4>Is that you? Upload your CV! <br> Only .pdf, .jpg and .jpeg formats allowed.
+            <br> Max size: 5 MB. </h4>
+      </div>
+      <div class="col-md-6 col-md-offset-3">
           <label for="fileSelect">Filename:</label>
-          <input type="file" name="file" id="fileSelect">
+          <input type="file" name="photo" id="fileSelect">
           <input type="submit" name="submit" value="Upload">
-          <p><strong>Note:</strong> Only .jpg & .jpeg formats allowed to a max size of 5 MB.</p>
-      </form>
-  </div>
-  </div>
-      <!-- Upload CV button End -->
+      </div>
+    </div>
+    </div>
+
+  <!-- Upload CV -->
 
 
   </section>
@@ -211,21 +215,27 @@ require "header.php";
     </div>
   </div>
   </section>
-  <!-- Upload CV button -->
 
-  <div class="container">
-      <div class="row justify-content-center">
-      <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-          <h2>Is that you? Upload your CV!</h2>
-          <label for="fileSelect">Filename:</label>
-          <input type="file" name="file" id="fileSelect">
-          <input type="submit" name="submit" value="Upload">
-          <p><strong>Note:</strong> Only .pdf format allowed to a max size of 5 MB.</p>
-      </form>
-  </div>
-  </div>
-      <!-- Upload CV button End -->
 
+
+    <!-- Upload CV -->
+
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+        <form action="upload-manager.php" method="post" enctype="multipart/form-data">
+            <h4>Is that you? Upload your CV! <br> Only .pdf, .jpg and .jpeg formats allowed.
+              <br> Max size: 5 MB. </h4>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <label for="fileSelect">Filename:</label>
+            <input type="file" name="photo" id="fileSelect">
+            <input type="submit" name="submit" value="Upload">
+        </div>
+      </div>
+      </div>
+
+    <!-- Upload CV -->
 
  <?php
 require "footer.php";
