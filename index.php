@@ -10,8 +10,8 @@ include "header.php";
 <body>
 
 <div class="box" style="position: relative; left: 0; top: 0;">
-<img src="kettlebell.jpg" class="gym"/>
-    <img src="logo.png" class="log"/>
+<img src="img/kettlebell.jpg" class="gym"/>
+    <img src="img/logo.png" class="log"/>
 </div>
 
 <br>
@@ -22,7 +22,7 @@ include "header.php";
     	<div class="card card border-0 shadow col-md-12 p-3 ">
     		<div class="row ">
     			<div class="col-md-4 ">
-    				<img class="w-100" src="aboutus.jpg" style ="width:500px;height:250px;margin:5%;">
+    				<img class="w-100" src="img/aboutus.jpg" style ="width:500px;height:250px;margin:5%;">
     			</div>
     			<div class="col-md-8">
     				<div class="card-body  mt-8">
@@ -42,7 +42,7 @@ include "header.php";
 
     		<div class="row ">
             <div class="col-md-4">
-    				<img class="w-100" src="girls_jump.jpg"style ="width:500px;height:250px;margin:5%;">
+    				<img class="w-100" src="img/girls_jump.jpg"style ="width:500px;height:250px;margin:5%;">
     			</div>
     			<div class="col-md-8">
     				<div class="card-body">
