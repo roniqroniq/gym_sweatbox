@@ -3,10 +3,10 @@
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check if file was uploaded without errors
     if(isset($_FILES["photo"]) && $_FILES["photo"]["error"] == 0){
-        $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
-        $filename = $_FILES["photo"]["name"];
-        $filetype = $_FILES["photo"]["type"];
-        $filesize = $_FILES["photo"]["size"];
+        $allowed = array("pdf" => "file/pdf");
+        $filename = $_FILES["file"]["name"];
+        $filetype = $_FILES["file"]["type"];
+        $filesize = $_FILES["file"]["size"];
 
         // Verify file extension
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
@@ -32,12 +32,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         echo "Error: " . $_FILES["photo"]["error"];
     }
 }
-if($_FILES["photo"]["error"] > 0){
-    echo "Error: " . $_FILES["photo"]["error"] . "<br>";
+if($_FILES["file"]["error"] > 0){
+    echo "Error: " . $_FILES["file"]["error"] . "<br>";
 } else{
-    echo "File Name: " . $_FILES["photo"]["name"] . "<br>";
-    echo "File Type: " . $_FILES["photo"]["type"] . "<br>";
-    echo "File Size: " . ($_FILES["photo"]["size"] / 1024) . " KB<br>";
-    echo "Stored in: " . $_FILES["photo"]["tmp_name"];
+    echo "File Name: " . $_FILES["file"]["name"] . "<br>";
+    echo "File Type: " . $_FILES["file"]["type"] . "<br>";
+    echo "File Size: " . ($_FILES["file"]["size"] / 1024) . " KB<br>";
+    echo "Stored in: " . $_FILES["file"]["tmp_name"];
 }
 ?>
