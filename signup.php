@@ -1,8 +1,11 @@
 <?php
   include('connect.php') ;
   require "header.php";
+ 
  ?>
-<body >
+
+ 
+<body>
   <main>
     <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
     <div class="container">
@@ -19,6 +22,7 @@
         <div class="form-group">
           <label for="name"><h5>Name:</h5></label>
             <input type="text" class="form-control" id="name" name="name"  required maxlength="50">
+           
           </div>
           <div class="form-group">
             <label for="email"><h5>Email:</h5></label>
@@ -28,7 +32,16 @@
           <label for="mobile"><h5>Mobile number:</h5></label>
             <input type="text" class="form-control" id="mobile" name="mobile" required maxlength="50">
         </div>
-        <div class="radio">
+
+
+<div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea name="address" class="form-control" cols="30" rows="6"></textarea>
+                </div>
+                <div class="form-group">
+                       <label for="membership"><h5>Membership:</h5></label>
+                       <br>
+        <div class="radio" style="padding 100px;">
           <label><input type="radio" name="membership"value ="bronze" checked>BRONZE</label>
 </div>
 <div class="radio">
@@ -36,29 +49,25 @@
 </div>
 <div class="radio disabled">
   <label><input type="radio" name="membership" value ="gold" >GOLD</label>
-</div>
+</div> 
 
-                   <!-- <div class="form-group">
-                       <label for="membership"><h5>Membership:</h5></label>
-                       <br>
-                       <form id="myForm" action="signup.php" method="POST" >
-                         <input type="checkbox" name="membership" value="gold">Gold<br>
-                         <input type="checkbox" name="membership" value="silver">Silver<br>
-                         <input type="checkbox" name="membership" value="bronze" checked>Bronze<br><br>
-                      </form>
-                   </div>  -->
+                  
+                        
                    <div class="form-group">
-                       <label for="membership"><h5>Classes:</h5></label>
+                       <label for="membership"style="padding 100px;"><h5>Classes:</h5></label>
                        <br>
-                       <form action="">
-                         <input type="checkbox" name="Yoga" value="yoga">Yoga<br>
-                         <input type="checkbox" name="Boxingyoga" value="boxingyoga">Boxingyoga<br>
-                         <input type="checkbox" name="Kettlebell" value="kettlebell" checked>Kettlebell<br>
-                         <input type="checkbox" name="Spin" value="spin">Spin Classes<br>
-                         <input type="checkbox" name="Weight" value="weight">Weight training<br>
-                         <input type="checkbox" name="Pilates" value="pilates">Pilates<br>
-                         <input type="checkbox" name="Boxing" value="boxing">Boxing<br>
-                    </form>
+                       
+                         <input type="checkbox" name="class[]" value="yoga">Yoga<br>
+                         <input type="checkbox" name="class[]" value="boxingyoga">Boxingyoga<br>
+                         <input type="checkbox" name="class[]" value="kettlebell" checked>Kettlebell<br>
+                         <input type="checkbox" name="class[]" value="spin">Spin Classes<br>
+                         <input type="checkbox" name="class[]" value="weight">Weight training<br>
+                         <input type="checkbox" name="class[]" value="pilates">Pilates<br>
+                         <input type="checkbox" name="class[]" value="boxing">Boxing<br>
+                   
+        
+
+                    
                   </div> 
                    <div class="form-group">
                        <label for="password"><h5>Password:</h5></label>
@@ -70,17 +79,43 @@
                    </div>
                    <button type="submit" name = "submit" class="btn btn-dark">Sign up</button>
                </form>
-               <!-- <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Signed up successfully!</h3> </div>
-               <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Try again!</div> -->
+              
            </div>
-           <div class="col-md-6 col-md-offset-3">
+           <!-- <div class="col-md-6 col-md-offset-3">
              <div class="container">
                <img class="img-fluid img-thumbnail" src="img/gallery_4.jpg">
              </div>
-       </div>
+       </div> -->
    </div>
    </div>
-   <?php
+  </div>
+  </div>
+<!-- <script>
+function myFunction() {
+  document.getElementById("myForm").submit();
+}
+</script> -->
+   <script>
+  $( window ).on( "load", function() {
+      mainNav();
+      $(window).scroll(function() {
+         mainNav();
+      });
+      function mainNav() {
+          var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+         if (top >1) $('.navy').stop().animate({
+            "opacity": '0',
+              "top": '0'
+           });
+         else $('.navy').stop().animate({
+              "top": '1',
+             "opacity": '1'
+         });
+
+       }
+       });
+  </script>
+  <?php
 
 
 function test_input($data) {
@@ -91,15 +126,15 @@ function test_input($data) {
 
 }
 if ($_SERVER['REQUEST_METHOD']=="POST"){
-    $errors = array();
- 
+$errors = array();
+
 
 
 if(empty($_POST['name'])){
     $errors[]= 'Name is required.';
     }
     else {
-    $name =trim($_POST['name']);
+    $name =test_input($_POST['name']);
     if (!preg_match("/^[a-zA-Z ]*$/",$name)){
         $errors[] = "invalid name !";
     }
@@ -107,7 +142,7 @@ if(empty($_POST['name'])){
         $errors[]='Email is required.';
         }
         else {
-        $email = trim($_POST['email']);
+        $email = test_input($_POST['email']);
         if (!filter_var($email,FILTER_VALIDATE_EMAIL)){
         $errors[] = "invalid email address.";
         }
@@ -117,21 +152,41 @@ if(empty($_POST['name'])){
         $errors[]= 'Mobile  is required.';
         }
         else {
-        $mobile =trim($_POST['mobile']);
+        $mobile =test_input($_POST['mobile']);
         if (!preg_match("/^[0-9]*$/",$mobile)){
             $errors[] = "invalid Mobile number !";
         }
      }
+
+
+  if(empty($_POST["address"])) {
+    $errors[] = 'Address is required.';
+    }else {
+      $address = trim($_POST["address"]);
+        if(!preg_match("/\d+ [0-9a-zA-Z ]+/", $address)){
+        $errors[] = "Invalid Address!";
+      }
+    }
      if(empty($_POST['membership'])){
       $errors[]= 'Membership  is required.';
       }
       else {
-      $membership =trim($_POST['membership']);
+      $membership =test_input($_POST['membership']);
+
       }
    
      if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["cpassword"])) {
       $password = test_input($_POST["password"]);
       $cpassword = test_input($_POST["cpassword"]);
+      
+      $passHash="$2y$10$";
+      $salt="iusesomecrazystrings22";
+      $hash_and_salt = $passHash.$salt;
+
+      $password =crypt($password,$hash_and_salt);
+    
+
+
       if (strlen($_POST["password"]) <= '8') {
         $errors[] = "Your Password Must Contain At Least 8 Characters!";
       }
@@ -151,7 +206,6 @@ if(empty($_POST['name'])){
     $errors[] = "Please enter password   ";
   }
   
-    
 
 
     
@@ -179,7 +233,7 @@ if(empty($_POST['name'])){
         foreach ($errors as $msg) {
            echo "$msg <br/>";
            }
-       }
+      }
 
 
 
@@ -191,31 +245,6 @@ if(empty($_POST['name'])){
 
     }
 ?>
-<script>
-function myFunction() {
-  document.getElementById("myForm").submit();
-}
-</script>
-   <script>
-  $( window ).on( "load", function() {
-      mainNav();
-      $(window).scroll(function() {
-         mainNav();
-      });
-      function mainNav() {
-          var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-         if (top >1) $('.navy').stop().animate({
-            "opacity": '0',
-              "top": '0'
-           });
-         else $('.navy').stop().animate({
-              "top": '1',
-             "opacity": '1'
-         });
-
-       }
-       });
-  </script>
 
 </body>
 <?php
