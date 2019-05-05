@@ -1,6 +1,10 @@
 <?php
 require "header.php";
+include "loginScript.php"
  ?>
+ 
+
+
  <body>
  <main>
    <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
@@ -13,7 +17,7 @@ require "header.php";
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h2>Log In</h2> Please log in using the form below. </p>
-                <form role="form" method="post" id="login_form" >
+                <form role="form" method="post" value ="login">
                     <div class="form-group">
                         <label for="email"> Email:</label>
                         <input type="email" class="form-control" id="name" name="email" required maxlength="50">
@@ -22,7 +26,7 @@ require "header.php";
                         <label for="password"> Password:</label>
                         <input type="password" class="form-control" id="password" name="password" required maxlength="50">
                     </div>
-                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnLogIn"a href="#" style="background-color:grey" >Log in</button>
+                    <button type="submit" name = "login" class="btn btn-dark">Log in</button>
                 </form>
                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Logged in successfully!</h3> </div>
                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Try again!</div>
