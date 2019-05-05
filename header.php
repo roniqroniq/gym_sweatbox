@@ -23,7 +23,7 @@
 <div class="navy">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="index.php" style="max-width: 4%;">
-                <img src="logo.png" class="img-fluid">
+                <img src="img/logo.png" class="img-fluid">
              </a>
 
 
