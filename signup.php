@@ -50,6 +50,7 @@
 <div class="radio disabled">
   <label><input type="radio" name="membership" value ="gold" >GOLD</label>
 </div>
+</div>
 
 
 
@@ -67,7 +68,6 @@
 
 
 
-
                   </div>
                    <div class="form-group">
                        <label for="password"><h5>Password:</h5></label>
@@ -81,15 +81,15 @@
                </form>
 
            </div>
-           <!-- <div class="col-md-6 col-md-offset-3">
+           <div class="col-md-6 col-md-offset-3">
              <div class="container">
                <img class="img-fluid img-thumbnail" src="img/gallery_4.jpg">
              </div>
-       </div> -->
+           </div>
    </div>
    </div>
-  </div>
-  </div>
+
+  </body>
 <!-- <script>
 function myFunction() {
   document.getElementById("myForm").submit();
@@ -246,7 +246,7 @@ if(empty($_POST['name'])){
     }
 ?>
 
-</body>
+
 <?php
  require "footer.php"
 ?>
