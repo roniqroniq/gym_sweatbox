@@ -1,10 +1,10 @@
 <?php
   include('connect.php') ;
   require "header.php";
- 
+
  ?>
 
- 
+
 <body>
   <main>
     <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
@@ -22,7 +22,7 @@
         <div class="form-group">
           <label for="name"><h5>Name:</h5></label>
             <input type="text" class="form-control" id="name" name="name"  required maxlength="50">
-           
+
           </div>
           <div class="form-group">
             <label for="email"><h5>Email:</h5></label>
@@ -49,14 +49,14 @@
 </div>
 <div class="radio disabled">
   <label><input type="radio" name="membership" value ="gold" >GOLD</label>
-</div> 
+</div>
 
-                  
-                        
+
+
                    <div class="form-group">
                        <label for="membership"style="padding 100px;"><h5>Classes:</h5></label>
                        <br>
-                       
+
                          <input type="checkbox" name="class[]" value="yoga">Yoga<br>
                          <input type="checkbox" name="class[]" value="boxingyoga">Boxingyoga<br>
                          <input type="checkbox" name="class[]" value="kettlebell" checked>Kettlebell<br>
@@ -64,11 +64,11 @@
                          <input type="checkbox" name="class[]" value="weight">Weight training<br>
                          <input type="checkbox" name="class[]" value="pilates">Pilates<br>
                          <input type="checkbox" name="class[]" value="boxing">Boxing<br>
-                   
-        
 
-                    
-                  </div> 
+
+
+
+                  </div>
                    <div class="form-group">
                        <label for="password"><h5>Password:</h5></label>
                        <input type="password" class="form-control" id="password" name="password" required maxlength="50">
@@ -79,7 +79,7 @@
                    </div>
                    <button type="submit" name = "submit" class="btn btn-dark">Sign up</button>
                </form>
-              
+
            </div>
            <!-- <div class="col-md-6 col-md-offset-3">
              <div class="container">
@@ -163,7 +163,7 @@ if(empty($_POST['name'])){
     $errors[] = 'Address is required.';
     }else {
       $address = trim($_POST["address"]);
-        if(!preg_match("/\d+ [0-9a-zA-Z ]+/", $address)){
+        if(!preg_match("/^[-a-z0-9 ,#'\/.]{3,50}$", $address)){
         $errors[] = "Invalid Address!";
       }
     }
@@ -174,17 +174,17 @@ if(empty($_POST['name'])){
       $membership =test_input($_POST['membership']);
 
       }
-   
+
      if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["cpassword"])) {
       $password = test_input($_POST["password"]);
       $cpassword = test_input($_POST["cpassword"]);
-      
+
       $passHash="$2y$10$";
       $salt="iusesomecrazystrings22";
       $hash_and_salt = $passHash.$salt;
 
       $password =crypt($password,$hash_and_salt);
-    
+
 
 
       if (strlen($_POST["password"]) <= '8') {
@@ -205,17 +205,17 @@ if(empty($_POST['name'])){
   } else {
     $errors[] = "Please enter password   ";
   }
-  
 
 
-    
-     
+
+
+
 
      if (empty($errors)) { // if no errors process input
         require('connect.php');
 
          $query = "INSERT INTO user (user_name,user_email,user_password,role_id) VALUES ('$name','$email','$password', 2);";
-         
+
           $result = @mysqli_query($db_connection, $query);
             if ($result){
          echo '
@@ -226,7 +226,7 @@ if(empty($_POST['name'])){
    ';} else { // else print each error.
      echo 'Error!'.mysqli_error($db_connection);
    }
-   
+
    }else {
         echo'<h1>Error!</h1>
          <p> The following error(s) occured:<br/>';
@@ -237,10 +237,10 @@ if(empty($_POST['name'])){
 
 
 
-      
 
-      
-    
+
+
+
   }
 
     }
