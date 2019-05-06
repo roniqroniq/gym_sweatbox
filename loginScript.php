@@ -1,6 +1,6 @@
 <?php
 include "connect.php";
-
+session_start();
 ?>
 <?php
 
@@ -26,18 +26,24 @@ $query = "SELECT * FROM user WHERE user_email ='{$username}'";
  $db_username = $row['user_email'];
  
  $db_password= $row['user_password'];
-
+ $db_userrole= $row['role_id'];
    }
 // This should redirect to the index page if the username and user password are the same . This is not working and I am not sure why.
 if ($username !== $db_username && $userpassword !== $db_password){
 
-header("Location:index.php");
+header("Location:login.php");
 
 
 // This should redirect if the password and user email are the same .
 } else if ($username == $db_username && $userpassword == $db_password){
 
-header ("Location:index.php");
+
+   $_SESSION['username'] = $db_username;// here we are assigning this user name (email) to a session called username.
+   $_SESSION['role_id'] = $db_userrole;
+
+
+
+    header ("Location:indexmem.php");
 
 }
 
