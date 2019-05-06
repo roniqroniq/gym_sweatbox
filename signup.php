@@ -163,7 +163,7 @@ if(empty($_POST['name'])){
     $errors[] = 'Address is required.';
     }else {
       $address = trim($_POST["address"]);
-        if(!preg_match("/^[-a-z0-9 ,#'\/.]{3,50}$/", $address)){
+        if(!preg_match("/\d+ [0-9a-zA-Z ]+/", $address)){
         $errors[] = "Invalid Address!";
       }
     }
