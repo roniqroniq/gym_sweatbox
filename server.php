@@ -20,13 +20,13 @@
     }
 //update records
     if(isset($_POST['update'])){
-      $name = mysqli_real_escape_string($db_connection, $_POST['title']);
-      $address = mysqli_real_escape_string($db_connection, $_POST['content']);
+      $title = mysqli_real_escape_string($db_connection, $_POST['title']);
+      $content = mysqli_real_escape_string($db_connection, $_POST['content']);
       $id = mysqli_real_escape_string($db_connection, $_POST['id']);
 
       mysqli_query($db_connection, "UPDATE index_features SET title ='$title', content='$content'
       WHERE id=$id");
-      $_SESSION['msg'] = "Address updated";
+      $_SESSION['msg'] = "Content updated";
       header('location: index_edit.php');
     }
 
@@ -34,7 +34,7 @@
     if(isset($_GET['del'])){
       $id = $_GET['del'];
       mysqli_query($db_connection, "DELETE FROM index_features WHERE id=$id");
-      $_SESSION['msg'] = "Address deleted";
+      $_SESSION['msg'] = "Content deleted";
       header('location: index_edit.php');
     }
 
