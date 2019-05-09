@@ -61,6 +61,50 @@ require "header.php";
        }
        });
   </script>
+   <?php
+if(isset($_POST) & !empty($_POST)){
+
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $mobile = $_POST['mobile'];
+  $message = $_POST['message'];
+  
+  if(!isset($name) || empty($name)){
+    $error[] = "Name is required";
+  }
+  
+  if(!isset($email) || empty($email)){
+    $error[] = "E-Mail is required";
+  }
+  
+  if(!isset($mobile) || empty($mobile)){
+    $error[] = "Subject is required";
+  }
+  
+  if(!isset($message) || empty($message)){
+    $error[] = "Message is required";
+  }
+  
+  if(!isset($error) || empty($error)){
+    $to = "owenlynch1310@gmail.com";
+    $headers = "From : " . $email;
+  
+    if (empty($errors)) { // if no errors process input
+      require('connect.php');
+
+    $sql = "INSERT INTO `contact` (name, email, mobile, message) VALUES ('$name', '$email', '$mobile', '$message')";
+      if(mysqli_query($db_connection, $sql)){
+          echo 'Message has been sent, we will get back to you soon';
+      }
+    }
+    
+  }
+}
+  
+  
+  
+
+?>
 </body>
  <?php
 require "footer.php";
