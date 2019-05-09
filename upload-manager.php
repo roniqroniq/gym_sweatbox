@@ -10,11 +10,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         // Verify file extension
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
-        if(!array_key_exists($ext, $allowed)) die("Error: Please select a valid file format.");
+        if(!array_key_exists($ext, $allowed)) die("Error: Please select a valid CV format.");
 
         // Verify file size - 5MB maximum
         $maxsize = 5 * 1024 * 1024;
-        if($filesize > $maxsize) die("Error: File size is larger than the allowed limit.");
+        if($filesize > $maxsize) die("Error: CV size is larger than the allowed limit.");
 
         // Verify MYME type of the file
         if(in_array($filetype, $allowed)){
@@ -23,10 +23,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 echo $filename . " is already exists.";
             } else{
                 move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $filename);
-                echo "Your file was uploaded successfully.";
+                echo "Your CV was uploaded successfully.";
             }
         } else{
-            echo "Error: There was a problem uploading your file. Please try again.";
+            echo "Error: There was a problem uploading your CV. Please try again.";
         }
     } else{
         echo "Error: " . $_FILES["photo"]["error"];
