@@ -16,15 +16,7 @@ if(isset($_GET['edit'])){
 <html lang="en">
 <body>
 
-  <?php if(isset($_SESSION['msg'])): ?>
-  <div class="msg">
-      <?php
 
-          echo $_SESSION['msg'];
-          unset($_SESSION['msg']);
-      ?>
-  </div>
-<?php endif ?>
 
 
 <main>
@@ -39,7 +31,15 @@ if(isset($_GET['edit'])){
 
     <div class="container">
 
+      <?php if(isset($_SESSION['msg'])): ?>
+      <div class="msg">
+          <?php
 
+              echo $_SESSION['msg'];
+              unset($_SESSION['msg']);
+          ?>
+      </div>
+      <?php endif ?>
 
       <table class="table table-bordered">
         <thead>
