@@ -21,16 +21,16 @@
 
         <div class="form-group">
           <label for="name"><h5>Name:</h5></label>
-            <input type="text" class="form-control" id="name" name="name"  required maxlength="50">
+            <input type="text" class="form-control" id="name" name="user_name"  required maxlength="50">
 
           </div>
           <div class="form-group">
             <label for="email"><h5>Email:</h5></label>
-            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+            <input type="email" class="form-control" id="email" name="user_email" required maxlength="50">
           </div>
           <div class="form-group">
           <label for="mobile"><h5>Mobile number:</h5></label>
-            <input type="text" class="form-control" id="mobile" name="mobile" required maxlength="50">
+            <input type="text" class="form-control" id="mobile" name="user_mobile" required maxlength="50">
         </div>
 
 
@@ -71,11 +71,11 @@
                   </div>
                    <div class="form-group">
                        <label for="password"><h5>Password:</h5></label>
-                       <input type="password" class="form-control" id="password" name="password" required maxlength="50">
+                       <input type="password" class="form-control" id="password" name="user_password" required maxlength="50">
                    </div>
                    <div class="form-group">
                        <label for="password"><h5>Confirm Password:</h5></label>
-                       <input type="password" class="form-control" id="password" name="cpassword" required maxlength="50">
+                       <input type="password" class="form-control" id="password" name="user_re_password" required maxlength="50">
                    </div>
                    <button type="submit" name = "submit" class="btn btn-dark">Sign up</button>
                </form>
@@ -130,29 +130,30 @@ $errors = array();
 
 
 
-if(empty($_POST['name'])){
+if(empty($_POST['user_name'])){
     $errors[]= 'Name is required.';
     }
     else {
-    $name =test_input($_POST['name']);
+    $name =test_input($_POST['user_name']);
     if (!preg_match("/^[a-zA-Z ]*$/",$name)){
         $errors[] = "invalid name !";
+
     }
-    if (empty($_POST['email'])){
+    if (empty($_POST['user_email'])){
         $errors[]='Email is required.';
         }
         else {
-        $email = test_input($_POST['email']);
+        $email = test_input($_POST['user_email']);
         if (!filter_var($email,FILTER_VALIDATE_EMAIL)){
         $errors[] = "invalid email address.";
         }
      }
 
-     if(empty($_POST['mobile'])){
+     if(empty($_POST['user_mobile'])){
         $errors[]= 'Mobile  is required.';
         }
         else {
-        $mobile =test_input($_POST['mobile']);
+        $mobile =test_input($_POST['user_mobile']);
         if (!preg_match("/^[0-9]*$/",$mobile)){
             $errors[] = "invalid Mobile number !";
         }
@@ -167,17 +168,24 @@ if(empty($_POST['name'])){
         $errors[] = "Invalid Address!";
       }
     }
-     if(empty($_POST['membership'])){
+     if(empty($_POST['mtype_id'])){
       $errors[]= 'Membership  is required.';
       }
       else {
-      $membership =test_input($_POST['membership']);
+      $membership =test_input($_POST['mtype_id']);
 
       }
+      if(empty($_POST['class'])){
+       $errors[]= 'Classes are required.';
+       }
+       else {
+       $class =test_input($_POST['class']);
 
-     if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["cpassword"])) {
-      $password = test_input($_POST["password"]);
-      $cpassword = test_input($_POST["cpassword"]);
+       }
+
+     if(!empty($_POST["password"]) && ($_POST["user_password"] == $_POST["user_re_password"])) {
+      $password = test_input($_POST["user_password"]);
+      $cpassword = test_input($_POST["user_re_password"]);
 
       $passHash="$2y$10$";
       $salt="iusesomecrazystrings22";
@@ -187,7 +195,7 @@ if(empty($_POST['name'])){
 
 
 
-      if (strlen($_POST["password"]) <= '8') {
+      if (strlen($_POST["user_password"]) <= '8') {
         $errors[] = "Your Password Must Contain At Least 8 Characters!";
       }
       elseif(!preg_match("#[0-9]+#",$password)) {
@@ -200,7 +208,7 @@ if(empty($_POST['name'])){
         $errors[] = "Your Password Must Contain At Least 1 Lowercase Letter!";
       }
   }
-  elseif(!empty($_POST["password"])) {
+  elseif(!empty($_POST["user_password"])) {
     $errors[] = "Please Check You've Entered Or Confirmed Your Password!";
   } else {
     $errors[] = "Please enter password   ";
@@ -214,7 +222,8 @@ if(empty($_POST['name'])){
      if (empty($errors)) { // if no errors process input
         require('connect.php');
 
-         $query = "INSERT INTO user (user_name,user_email,user_password,role_id) VALUES ('$name','$email','$password', 2);";
+         $query = "INSERT INTO user (user_name, user_email, user_mobile, address, mtype_id, class, user_password, user_re_password, role_id)
+         VALUES ('$name','$email','$mobile','$address','$membership', '$class','$password','$cpassword', 2);";
 
           $result = @mysqli_query($db_connection, $query);
             if ($result){
