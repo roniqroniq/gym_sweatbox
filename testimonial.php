@@ -52,6 +52,7 @@ require "header.php";
     </div>
 
     <hr class="featurette-divider">
+
 </div>
     <!-- /END THE FEATURETTES -->
     <script>
