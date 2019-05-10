@@ -9,7 +9,7 @@ include "connect.php";?>
 
 if(isset($_POST['login'])){
 
-    $username = $_POST['email'];
+    $username = $_POST['user_email'];
     $userpassword = $_POST['password'];
 
     $username = mysqli_real_escape_string($db_connection,$username);
@@ -28,7 +28,7 @@ if(isset($_POST['login'])){
     while ($row =mysqli_fetch_array($select_user_query)){
 
         $db_username = $row['user_email'];
-        $db_password= $row['user_password'];
+        $db_password= $row['password'];
         $db_userrole= $row['role_id'];
 
    }
