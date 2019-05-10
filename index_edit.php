@@ -40,7 +40,7 @@ if(isset($_GET['edit'])){
           ?>
       </div>
       <?php endif ?>
-
+      <h2>Index Features Edit</h2> Index features may be added, editted, or deleted below: </p>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -55,31 +55,31 @@ if(isset($_GET['edit'])){
                   <td><?php echo $row['title']; ?></td>
                   <td><?php echo $row['content']; ?></td>
                   <td>
-                    <a href="index_edit.php?edit=<?php echo $row['id']; ?>">Edit</a>
+                    <a class="btn btn-info"href="index_edit.php?edit=<?php echo $row['id']; ?>">Edit</a>
                   </td>
                   <td>
-                    <a href="server.php?del=<?php echo $row['id']  ?>">Delete</a>
+                    <a class="btn btn-danger" href="server.php?del =<?php echo $row['id']  ?>">Delete</a>
                   </td>
               </tr> <?php } ?>
         </tbody>
       </table>
 
       <!-- this is the form for editting or adding - this is for admin -->
-    <form method="post" action="server.php">
+    <form class="form-group"  method="post" action="server.php">
     <input type ="hidden" name="id" value="<?php echo $id; ?> ">
     <div class="form-group ">
       <label>Title</label>
-      <input type="text" name="title" value="<?php echo $title; ?>">
+      <input class="form-control" type="text" name="title" value="<?php echo $title; ?>">
     </div>
     <div class="form-group">
       <label>Content</label>
-      <input type="text" name="content" value= "<?php echo $content; ?>">
+      <input class="form-control" type="text" name="content" value= "<?php echo $content; ?>">
     </div>
     <div class="form-group">
     <?php if ($edit_state == false): ?>
-      <button type="submit" name="save" class="btn">Save</button>
+      <button class="btn btn-info btn-lg" type="submit" name="save" class="btn">Save</button>
     <?php else: ?>
-      <button type="submit" name="update" class="btn">Update</button>
+      <button class="btn btn-info btn-lg" type="submit" name="update" class="btn">Update</button>
     <?php endif ?>
     </div>
     </form>
