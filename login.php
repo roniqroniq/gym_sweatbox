@@ -1,8 +1,8 @@
 <?php
 require "header.php";
-include "loginScript.php"
+include "loginScript.php";
  ?>
- 
+
 
 
  <body>
@@ -17,10 +17,11 @@ include "loginScript.php"
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h2>Log In</h2> Please log in using the form below. </p>
-                <form role="form" method="post" value ="login">
+
+          <form role="form" method="post" value ="login">
                     <div class="form-group">
-                        <label for="email"> Email:</label>
-                        <input type="email" class="form-control" id="name" name="email" required maxlength="50">
+                        <label for="user_email"> Email:</label>
+                        <input type="user_email" class="form-control" id="user_email" name="user_email" required maxlength="50">
                     </div>
                     <div class="form-group">
                         <label for="password"> Password:</label>
@@ -39,6 +40,7 @@ include "loginScript.php"
         </div>
     </div>
 </body>
+
   <?php
  require "footer.php";
    ?>
