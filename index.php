@@ -1,14 +1,29 @@
 <?php
 include "header.php";
-?>
+include('server.php');
 
-
-
+if(isset($_GET['edit'])){
+  $id = $_GET['edit'];
+  $edit_state = true;
+  $rec =mysqli_query($db_connection, "SELECT * FROM index_features WHERE id=$id ");
+  $record = mysqli_fetch_array($rec);
+  $title = $record['title'];
+  $content = $record['content'];
+  $id = $record['id'];
+}?>
 <html>
 
 
 <body>
+  <?php if(isset($_SESSION['msg'])): ?>
+  <div class="msg">
+      <?php
 
+          echo $_SESSION['msg'];
+          unset($_SESSION['msg']);
+      ?>
+  </div>
+  <?php endif ?>
 <div class="box" style="position: relative; left: 0; top: 0;">
 <img src="img/kettlebell.jpg" class="gym"/>
     <img src="img/logo.png" class="log"/>
@@ -26,9 +41,12 @@ include "header.php";
     			</div>
     			<div class="col-md-8">
     				<div class="card-body  mt-8">
-    					<h3 class="card-title text-center border-0"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">ABOUT US</h3>
+              <?php while ($row = mysqli_fetch_array($results)){ ?>
+    					<h3 class="card-title text-center border-0"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey"><?php echo $row['title']; ?></h3>
               <div class ="text-center">
-    					<p class="card-text "style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    					<p class="card-text "style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">
+                <?php echo $row['content']; ?></p>
+                 <?php } ?>
     					<a href="about.php" class="btn btn-dark"style="background-color:grey;colour:white">MORE</a>
                  </div>
              </div>
