@@ -27,7 +27,7 @@
 <div class="navy">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="index.php" style="max-width: 4%;">
-                <img src="logo.png" class="img-fluid">
+                <img src="img/logo.png" class="img-fluid">
              </a>
 
 
@@ -46,19 +46,19 @@
               <li class="nav-item active">
                 <a class="nav-link" href="class_edit.php">EDIT CLASSES</a>
               </li>
-             
-             
-              
+
+
+
               <li class="nav-item active">
                 <a class="nav-link" href="">ADD</a>
               </li>
 
 
-              
+
             </ul>
-            </div> 
-             
-            <p style="color:white;"> WELCOME ADMIN<br><?php echo $_SESSION ['username'] ?> </p>
+            </div>
+
+            <p style="color:white;"> WELCOME ADMIN<br><?php echo $_SESSION ['user_email'] ?> </p>
             <div class="collapse navbar-collapse" id="account">
             <ul class="navbar-nav ml-auto">
                <br>
