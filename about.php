@@ -112,7 +112,7 @@ include "header.php";
     <!-- Team Member 1 -->
     <div class="col-xl-4 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+        <img src="img/miriam.jpg" class="card-img-top" alt="Team member">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Miriam</h5>
           <div class="card-text text-black-50">Personal Trainer</div>
@@ -122,7 +122,7 @@ include "header.php";
     <!-- Team Member 2 -->
     <div class="col-xl-4 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+        <img src="img/owen.png" class="card-img-top" alt="Team member">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Owen</h5>
           <div class="card-text text-black-50">Nutritionist</div>
@@ -132,7 +132,7 @@ include "header.php";
     <!-- Team Member 3 -->
     <div class="col-xl-4 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="img/yana.png" class="card-img-top" alt="...">
+        <img src="img/yana.png" class="card-img-top" alt="Team member">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Yana</h5>
           <div class="card-text text-black-50">Wellness Coach</div>
@@ -142,7 +142,7 @@ include "header.php";
 
 
 </div>
-<!-- /.container -->
+
 
 <br>
 <br>
