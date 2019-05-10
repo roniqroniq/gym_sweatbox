@@ -1,5 +1,24 @@
 
-<?php session_start();?>
+<?php   
+session_start();
+// include_once 'connect.php';
+
+// if (!isset($_SESSION['username'])){
+//   header("Location:login.php");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +46,7 @@
 <div class="navy">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="index.php" style="max-width: 4%;">
-                <img src="img/logo.png" class="img-fluid">
+                <img src="logo.png" class="img-fluid">
              </a>
 
 
@@ -39,49 +58,37 @@
 
           <div class="collapse navbar-collapse" id="links">
             <ul class="navbar-nav mr-auto">
-              <!-- <li class="nav-item active">
-                <a class="nav-link" href="about.php">ABOUT</a>
-              </li>
+              
               <li class="nav-item active">
-                <a class="nav-link" href="gallery.php">GALLERY</a>
+                <a class="nav-link" href="">GOALS</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="classes.php">CLASSES</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="testimonial.php">TESTIMONIALS</a>
+                <a class="nav-link" href="signup.php">JOIN NOW</a>
               </li>
+             
               <li class="nav-item active">
                 <a class="nav-link" href="career.php">CAREERS</a>
               </li>
+              
               <li class="nav-item active">
-                <a class="nav-link" href="signup.php">JOIN NOW</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.php">CONTACT US</a>
+                <a class="nav-link" href="">CONTACT US</a>
               </li>
 
-              <li class="nav-item  active dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    MEMBERSHIP
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="membership.php">LEVELS</a>
-
-
-                    <a class="dropdown-item" href="events.php">EVENTS</a>
-                  </div>
-                </li>
+              
             </ul>
-            </div> -->
-
-            <p style="color:white;"> WELCOME <?php echo $_SESSION ['user_email'] ?> </p>
+            </div> 
+             
+            <p style="color:white;"> WELCOME <?php echo $_SESSION ['user_name'] ?> </p>
             <div class="collapse navbar-collapse" id="account">
             <ul class="navbar-nav ml-auto">
                <br>
-
-              <li class="nav-item active"><a class="nav-link"  href="index.php">LOG OUT</a></li>
+               <div class ="float-right">
+              <li class="nav-item active"><a class="nav-link"  href="logout.php">LOG OUT</a></li>
             </ul>
+            </div>
           </div>
         </div>
       </nav>
