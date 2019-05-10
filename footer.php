@@ -22,14 +22,13 @@
       <div class="col-md-3 col-sm-6">
         <!--Column1-->
         <div class="footer-pad">
-          <h4>PAYMENT</h4>
+          <h4>MORE ABOUT US</h4>
           <ul class="list-unstyled">
-            <li><a href="#"></a></li>
-            <li><a href="#">Payment Center</a></li>
-            <li><a href="#">Contact Directory</a></li>
-            <li><a href="#">Forms</a></li>
-            <li><a href="#">News and Updates</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="events.php">Events</a></li>
+            <li><a href="membership.php">Membership</a></li>
+            <li><a href="contact.php">Contact Directory</a></li>
+            <li><a href="classes.php">Classes</a></li>
+            <li><a href="therestofit.php">FAQs</a></li>
           </ul>
         </div>
       </div>
@@ -39,11 +38,11 @@
           <h4>TECHNICAL</h4>
           <ul class="list-unstyled">
 
-            <li><a href="#">Accessibility</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Webmaster</a></li>
+            <li><a href="therestofit.php">Accessibility</a></li>
+            <li><a href="therestofit.php">Disclaimer</a></li>
+            <li><a href="therestofit.php">Privacy Policy</a></li>
+            <li><a href="therestofit.php">FAQs</a></li>
+            <li><a href="therestofit.php">Webmaster</a></li>
           </ul>
         </div>
       </div>
@@ -52,11 +51,11 @@
         <div class="footer-pad">
           <h4>LOCATIONS</h4>
           <ul class="list-unstyled">
-            <li><a href="#">Dublin</a></li>
-            <li><a href="#">Galway</a></li>
-            <li><a href="#">Barcelona</a></li>
-            <li><a href="#">Manchester</a></li>
-            <li><a href="#">Paris</a></li>
+            <li><a href="therestofit.php">Dublin</a></li>
+            <li><a href="therestofit.php">Galway</a></li>
+            <li><a href="therestofit.php">Barcelona</a></li>
+            <li><a href="therestofit.php">Manchester</a></li>
+            <li><a href="therestofit.php">Paris</a></li>
             <li>
               <a href="#"></a>
             </li>
@@ -66,16 +65,16 @@
     	<div class="col-md-3">
     		<h4>Follow Us</h4>
             <ul class="social-network social-circle">
-            <li><a href="#" id="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-             <li><a href="#" id="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-             <li><a href="#" id="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-             <li><a href="#" id="icoTwitter" title="Linkedin"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="www.facebook.com" id="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+             <li><a href="www.linkedin.com" id="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+             <li><a href="www.instagram.com" id="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="www.twitter.com" id="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
             </ul>
 		</div>
     </div>
 	<div class="row">
 		<div class="col-md-12 copy">
-			<p class="text-center">&copy; Copyright 2018 - Sweat Box.  All rights reserved.</p>
+			<p class="text-center">&copy; Copyright 2019 - Sweat Box.  All rights reserved.</p>
 		</div>
 	</div>
 
