@@ -28,8 +28,8 @@ if(isset($_POST['login'])){
     while ($row =mysqli_fetch_array($select_user_query)){
 
         $db_username = $row['user_email'];
-        $db_password= $row['password'];
-        $db_userrole= $row['role'];
+        $db_password= $row['user_password'];
+        $db_userrole= $row['role_id'];
 
    }
 // This should redirect to the index page if the username and user password are not  the same . This is not working and I am not sure why.
@@ -47,7 +47,7 @@ if(isset($_POST['login'])){
 
         header ("Location:indexmem.php");
         exit;
-    } else if ($db_userrole == 1){ // here it will log the user in as 1 because one is the admin in the user table.
+    } else if ($db_userrole == 0){ // here it will log the user in as 1 because one is the admin in the user table.
         $_SESSION['username'] = $db_username;
         $_SESSION['role_id'] = $db_userrole;
 
