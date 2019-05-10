@@ -1,6 +1,7 @@
 <?php
-require "header.php";
- ?>
+include "headermem.php";
+?>
+
 
 <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
     <div class="container">
@@ -115,6 +116,40 @@ require "header.php";
   </script>
   </div><!-- /.container -->
 </main>
+
+<?php
+if(isset($_POST) & !empty($_POST)){
+
+  $class = $_POST['class'];
+  $message = $_POST['message'];
+
+
+  if(!isset($class) || empty($class)){
+    $error[] = "Class is required";
+  }
+
+  if(!isset($message) || empty($message)){
+    $error[] = "Message is required";
+  }
+
+  if(!isset($error) || empty($error)){
+    $to = "owenlynch1310@gmail.com";
+    $headers = "From : " . $email;
+
+    if (empty($errors)) { // if no errors process input
+      require('connect.php');
+
+      $date = date('Y-m-d H:i:s');
+
+    $sql = "INSERT INTO testimonial ('name', 'dateposted', 'class', 'message') VALUES ($current_user_id', '$date', '$class', '$message')";
+      if(mysqli_query($db_connection, $sql)){
+          echo 'Testimonil has been sent, we will upload it soon';
+      }
+    }
+
+  }
+}
+?>
  <?php
 require "footer.php"
   ?>
