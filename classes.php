@@ -1,6 +1,17 @@
 <?php
-require "header.php";
- ?>
+include "header.php";
+include('server_class.php');
+
+if(isset($_GET['edit'])){
+  $id = $_GET['edit'];
+  $edit_state = true;
+  $rec =mysqli_query($db_connection, "SELECT * FROM class_features WHERE id=$id ");
+  $record = mysqli_fetch_array($rec);
+  $title = $record['title'];
+  $content = $record['content'];
+  $id = $record['id'];
+}?>
+
 <body>
  <div class="jumbotron jumbotron-fluid" style="background-image: url(img/gym-banner.jpg); background-size: cover; color: white;">
 
@@ -20,15 +31,16 @@ require "header.php";
             <div class="media">
               <div class="media-left">
                 <a href="login.php">
+                  <?php while ($row = mysqli_fetch_array($results)){ ?>
                   <img class="mr-3" src="img/yoga_mini.jpg" alt="...">
                 </a>
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Yoga</h4>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                <h4 class="media-heading"><?php echo $row['title']; ?></h4>
+                <?php echo $row['content']; ?>
               </div>
             </div>
-        </div>
+        </div><?php } ?>
         <div class="col-md-6">
             <div class="media">
               <div class="media-left">
@@ -37,8 +49,8 @@ require "header.php";
                 </a>
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Boxingyoga</h4>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                <h4 class="media-heading">Boxercise</h4>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio
               </div>
             </div>
         </div>
