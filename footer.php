@@ -28,7 +28,7 @@
             <li><a href="membership.php">Membership</a></li>
             <li><a href="contact.php">Contact Directory</a></li>
             <li><a href="classes.php">Classes</a></li>
-            <li><a href="therestofit.php">FAQs</a></li>
+            <li><a href="testimonial_add.php">FAQs</a></li>
           </ul>
         </div>
       </div>
