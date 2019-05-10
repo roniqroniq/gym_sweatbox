@@ -7,8 +7,7 @@ require "header.php";
       <h2>“Sweat is your fat crying.”</h2>
     </div>
   </div>
-
- <main role="main">
+  <main role="main">
 
 <div class="container">
   <hr class="featurette-divider">
