@@ -87,11 +87,11 @@ function test_input($data) {
             // $password =htmlspecialchars($_POST['password']);
           }
 
-        $passHash="$2y$10$";
-        $salt="iusesomecrazystrings22";
-        $hash_and_salt = $passHash.$salt;
-
-        $password =crypt($password,$hash_and_salt);
+        // $passHash="$2y$10$";
+        // $salt="iusesomecrazystrings22";
+        // $hash_and_salt = $passHash.$salt;
+        //
+        // $password =crypt($password,$hash_and_salt);
     //
     //
     //
