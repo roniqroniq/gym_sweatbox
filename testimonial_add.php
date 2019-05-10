@@ -139,9 +139,8 @@ if(isset($_POST) & !empty($_POST)){
     if (empty($errors)) { // if no errors process input
       require('connect.php');
 
-      $date = date('Y-m-d H:i:s');
 
-    $sql = "INSERT INTO testimonial ('name', 'dateposted', 'class', 'message') VALUES ($current_user_name', '$date', '$class', '$message')";
+    $sql = "INSERT INTO testimonial ('name', 'dateposted', 'class', 'message') VALUES ('$current_user_name', '$created_at', '$class', '$message')";
       if(mysqli_query($db_connection, $sql)){
           echo 'Testimonil has been sent, we will upload it soon';
       }
