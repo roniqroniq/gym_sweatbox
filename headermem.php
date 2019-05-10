@@ -27,7 +27,7 @@
 <div class="navy">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="index.php" style="max-width: 4%;">
-                <img src="logo.png" class="img-fluid">
+                <img src="img/logo.png" class="img-fluid">
              </a>
 
 
@@ -67,19 +67,19 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="membership.php">LEVELS</a>
-                    
-                    
+
+
                     <a class="dropdown-item" href="events.php">EVENTS</a>
                   </div>
                 </li>
             </ul>
             </div> -->
-            
-            <p style="color:white;"> WELCOME <?php echo $_SESSION ['username'] ?> </p>
+
+            <p style="color:white;"> WELCOME <?php echo $_SESSION ['user_email'] ?> </p>
             <div class="collapse navbar-collapse" id="account">
             <ul class="navbar-nav ml-auto">
                <br>
-               
+
               <li class="nav-item active"><a class="nav-link"  href="index.php">LOG OUT</a></li>
             </ul>
           </div>
