@@ -25,11 +25,11 @@ if(isset($_POST['login'])){
     }
 
 //looping through the info in the database to see if it is there
-    while ($row =mysqli_fetch_array($select_member_query)){
+   while ($row =mysqli_fetch_array($select_member_query)){
 
-        $db_email = $row['user_email'];
-        $db_password= $row['password'];
-        $db_role= $row['role'];
+       $db_email = $row['user_email'];
+       $db_password= $row['password'];
+       $db_role= $row['role'];
 
 
 // This should redirect to the index page if the username and user password are not  the same . This is not working and I am not sure why.
