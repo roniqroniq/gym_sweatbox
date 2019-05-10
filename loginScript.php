@@ -43,6 +43,7 @@ if(isset($_POST['login'])){
            $_SESSION['user_email'] = $db_email;// here we are assigning this user name (email) to a session called username.
            $_SESSION['role'] = $db_role;
            $_SESSION['password'] = $db_password;
+           
 
        header ("Location:indexmem.php");
        exit;
