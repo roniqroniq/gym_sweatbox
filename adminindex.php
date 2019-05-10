@@ -1,9 +1,9 @@
 <?php
+include "adminhead.php";
 include "headermem.php";
 if (!isset($_SESSION['username'])){
   header("Location:login.php");
 }
-
 ?>
 
 
@@ -12,9 +12,10 @@ if (!isset($_SESSION['username'])){
   
     
 <body>  
+    
 
 <div class="box" style="position: relative; left: 0; top: 0;">
-<img src="kettlebell.jpg" class="gym"/>
+<img src="blur.jpg" class="gym"/>
     <img src="logo.png" class="log"/>
 </div>
 
@@ -26,14 +27,14 @@ if (!isset($_SESSION['username'])){
     	<div class="card card border-0 shadow col-md-12 p-3 ">
     		<div class="row ">
     			<div class="col-md-4 ">
-    				<img class="w-100" src="aboutus.jpg" style ="width:500px;height:250px;margin:5%;">
+    				<img class="w-100" src="index.png" style ="width:500px;height:250px;margin:5%;">
     			</div>
     			<div class="col-md-8">
     				<div class="card-body  mt-8">
-    					<h3 class="card-title text-center border-0"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">YOUR PROFILE</h3>
+    					<h3 class="card-title text-center border-0"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">WELCOME ADMINISTRATOR</h3>
               <div class ="text-center">
-    					<p class="card-text "style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    					<a href="" class="btn btn-dark"style="background-color:grey;colour:white">EDIT PROFILE</a>
+    					<p class="card-text "style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">You are currently logged in as Administrator. This allows adminstrative rights to edit and modify a number of web pages on the site. Please use the website navigation bar to select the required action. If for any reason you have accessed this page and are not the administrator please log out immediately.</p>
+    					<a href="" class="btn btn-dark"style="background-color:grey;colour:white">EDIT HOMEPAGE</a>
                  </div>   
              </div>
     			</div>
@@ -46,14 +47,14 @@ if (!isset($_SESSION['username'])){
       
     		<div class="row ">
             <div class="col-md-4">
-    				<img class="w-100" src="girls_jump.jpg"style ="width:500px;height:250px;margin:5%;">
+    				<img class="w-100" src="mem.png"style ="width:500px;height:250px;margin:5%;">
     			</div>
     			<div class="col-md-8">
     				<div class="card-body">
-    					<h3 class="card-title text-center"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">SET YOUR GOALS</h3>
+    					<h3 class="card-title text-center"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">EDIT MEMBERSHIP</h3>
               <div class="text-center">
     					<p class="card-text"style="text-align:center;font-family: 'Roboto', sans-serif,!important;color:grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    					<a href="" class="btn btn-dark" style="background-color:grey">GOALS</a>
+    					<a href="" class="btn btn-dark" style="background-color:grey">EDIT MEMBERSHIP</a>
                    
               </div>
     				</div>
