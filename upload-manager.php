@@ -16,8 +16,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $maxsize = 5 * 1024 * 1024;
         if($filesize > $maxsize) die("Error: CV size is larger than the allowed limit.");
 
-        // Verify MYME type of the file
+        // Verify type of the file
         if(in_array($filetype, $allowed)){
+
             // Check whether file exists before uploading it
             if(file_exists("upload/" . $filename)){
                 echo $filename . " is already exists.";

@@ -7,7 +7,8 @@ require "header.php";
       <h2>“Sweat is your fat crying.”</h2>
     </div>
   </div>
-  <main role="main">
+
+ <main role="main">
 
 <div class="container">
   <hr class="featurette-divider">
@@ -52,6 +53,44 @@ require "header.php";
 
     <hr class="featurette-divider">
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-3">
+              <h4>Share a testimonial with the others.</h4>
+              <h6> Spread the love! </h6>
+                <form role="form" method="post" id="contact_form" >
+                    <div class="form-group">
+                        <label for="name"> Class:</label>
+                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="name"> Comment:</label>
+                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs"a href="#" style="background-color:grey">Send</button>
+                </form>
+                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="container">
+                <div class="col-md-6 col-md-offset-3">
+                <form action="upload-manager.php" method="post" enctype="multipart/form-data">
+                  </div>
+
+              </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+    <div class="row">
+
+      </div>
+      </div>
+
+    <!-- Upload Testimonial. -->
 </div>
     <!-- /END THE FEATURETTES -->
     <script>
