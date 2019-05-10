@@ -61,39 +61,25 @@ include "headermem.php";
               <h6> Spread the love! </h6>
                 <form role="form" method="post" id="contact_form" >
                     <div class="form-group">
-                        <label for="name"> Class:</label>
-                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        <label for="class"> Class:</label>
+                        <input type="text" class="form-control" id="class" name="class" required maxlength="50">
                     </div>
                     <div class="form-group">
-                        <label for="name"> Comment:</label>
-                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                        <label for="test_body"> Comment:</label>
+                        <textarea class="form-control" type="textarea" name="test_body" id="test_body" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
                     </div>
                     <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs"a href="#" style="background-color:grey">Send</button>
                 </form>
                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
             </div>
-            <div class="col-md-6 col-md-offset-3">
-              <div class="container">
-                <div class="col-md-6 col-md-offset-3">
-                <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-                  </div>
+
 
               </div>
         </div>
         </div>
-    </div>
 
 
-    <div class="container">
-    <div class="row">
-
-      </div>
-      </div>
-
-    <!-- Upload Testimonial. -->
-</div>
-    <!-- /END THE FEATURETTES -->
     <script>
   $( window ).on( "load", function() {
       mainNav();
@@ -121,8 +107,9 @@ include "headermem.php";
 if(isset($_POST) & !empty($_POST)){
 
   $class = $_POST['class'];
-  $message = $_POST['message'];
-
+  $message = $_POST['test_body'];
+  $current_user_name = $_SESSION['user_email'];
+  $timestamp = '';
 
   if(!isset($class) || empty($class)){
     $error[] = "Class is required";
@@ -132,22 +119,23 @@ if(isset($_POST) & !empty($_POST)){
     $error[] = "Message is required";
   }
 
-  if(!isset($error) || empty($error)){
-    $to = "owenlynch1310@gmail.com";
-    $headers = "From : " . $email;
+  // if(!isset($error) || empty($error)){
+  //   $to = "owenlynch1310@gmail.com";
+  //   $headers = "From : " . $email;
 
     if (empty($errors)) { // if no errors process input
       require('connect.php');
 
 
-    $sql = "INSERT INTO testimonial ('name', 'dateposted', 'class', 'message') VALUES ('$current_user_name', '$created_at', '$class', '$message')";
+    $sql = "INSERT INTO testimonial ('user_email', 'created_at', 'class', 'test_body')
+    VALUES ('$current_user_name', '$timestamp', '$class', '$message')";
       if(mysqli_query($db_connection, $sql)){
-          echo 'Testimonil has been sent, we will upload it soon';
+          echo 'Testimonial has been sent, we will upload it soon';
       }
     }
 
   }
-}
+
 ?>
  <?php
 require "footer.php"
