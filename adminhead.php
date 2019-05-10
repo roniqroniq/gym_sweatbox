@@ -37,14 +37,14 @@
           </button>
 
 
-          <div class="collapse navbar-collapse" id="links">
+           <div class="collapse navbar-collapse" id="links">
             <ul class="navbar-nav mr-auto">
-              
+
             <li class="nav-item active">
                 <a class="nav-link" href="">EDIT HOMEPAGE</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="">EDIT MEMBERS</a>
+                <a class="nav-link" href="class_edit.php">EDIT CLASSES</a>
               </li>
              
              
