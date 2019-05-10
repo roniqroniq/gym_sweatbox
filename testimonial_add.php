@@ -127,7 +127,7 @@ if(isset($_POST) & !empty($_POST)){
       require('connect.php');
 
 
-    $sql = "INSERT INTO testimonial ('user_email', 'created_at', 'test_body','class')";
+    $sql = "INSERT INTO testimonial ('user_email', 'created_at', 'test_body','class')
     VALUES ('$current_user_name', '$timestamp', '$class', '$message')";
       if(mysqli_query($db_connection, $sql)){
           echo 'Testimonial has been sent, we will upload it soon';
