@@ -12,6 +12,7 @@ if(isset($_GET['edit'])){
   $line1 = $record['line1'];
   $line2 = $record['line2'];
   $line3 = $record['line3'];
+  $line3 = $record['line4'];
   $id = $record['id'];
 }?>
 
@@ -60,23 +61,23 @@ if(isset($_GET['edit'])){
           <li><?php echo $row['line2']; ?></li>
           <li><?php echo $row['line3']; ?></li>
           <li><?php echo $row['line4']; ?></li>
-        </ul><?php } ?>
+        </ul>
         </ul>
         <a href="signup.php"  class="btn btn-lg btn-block btn-dark">Sign up for Silver</a>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
       <div class="btnstyl3">
-        <h4 class="my-0 font-weight-normal">Bronze</h4>
+        <h4 class="my-0 font-weight-normal"><?php echo $row['type']; ?></h4>
       </div>
       <div class="card-body">
-        <h1 class="card-title pricing-card-title">€ 20 <small class="text-muted">/ mo</small></h1>
+        <h1 class="card-title pricing-card-title">€ <?php echo $row['fee']; ?> <small class="text-muted">/ mo</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
-          <li>Limited access</li>
-          <li>Private Showers and Locker room</li>
-          <li>Choose 2 classes</li>
-          <li>Stay Healthy</li>
-        </ul>
+          <li><?php echo $row['line1']; ?></li>
+          <li><?php echo $row['line2']; ?></li>
+          <li><?php echo $row['line3']; ?></li>
+          <li><?php echo $row['line4']; ?></li>
+        </ul><?php } ?>
         <a href="signup.php"  class="btn btn-lg btn-block btn-dark btn-mem">Sign up for Bronze</a>
       </div>
     </div>
