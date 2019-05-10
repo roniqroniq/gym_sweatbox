@@ -44,6 +44,7 @@ if(isset($_GET['edit'])){
           ?>
       </div>
       <?php endif ?>
+      <h2>Membership Information Edit</h2> Membership information may be added, editted, or deleted below: </p>
         <!--Displays the table of information with edit and delete buttons beside each -->
       <table class="table table-bordered">
         <thead>
@@ -67,47 +68,47 @@ if(isset($_GET['edit'])){
                         <td><?php echo $row['line3']; ?></td>
                         <td><?php echo $row['line4']; ?></td>
                   <td>
-                    <a href="mem_edit.php?edit=<?php echo $row['id']; ?>">Edit</a>
+                    <a class="btn btn-info" href="mem_edit.php?edit=<?php echo $row['id']; ?>">Edit</a>
                   </td>
                   <td>
-                    <a href="server_mem.php?del=<?php echo $row['id']  ?>">Delete</a>
+                    <a class="btn btn-danger" href="server_mem.php?del=<?php echo $row['id']  ?>">Delete</a>
                   </td>
               </tr> <?php } ?>
         </tbody>
       </table>
 
       <!-- this is the form for editting or adding - this is for admin -->
-    <form method="post" action="server_mem.php">
+    <form class="form-group" method="post" action="server_mem.php">
     <input type ="hidden" name="id" value="<?php echo $id; ?> ">
     <div class="form-group ">
       <label>Membership Type</label>
-      <input type="text" name="type" value="<?php echo $type; ?>">
+      <input class="form-control" type="text" name="type" value="<?php echo $type; ?>">
     </div>
     <div class="form-group">
       <label>Fee Amount</label>
-      <input type="text" name="fee" value= "<?php echo $fee; ?>">
+      <input class="form-control" type="text" name="fee" value= "<?php echo $fee; ?>">
     </div>
     <div class="form-group">
       <label>Info Line 1</label>
-      <input type="text" name="line1" value= "<?php echo $line1; ?>">
+      <input class="form-control" type="text" name="line1" value= "<?php echo $line1; ?>">
     </div>
     <div class="form-group">
       <label>Info Line 2</label>
-      <input type="text" name="line2" value= "<?php echo $line2; ?>">
+      <input class="form-control" type="text" name="line2" value= "<?php echo $line2; ?>">
     </div>
     <div class="form-group">
       <label>Info Line 3</label>
-      <input type="text" name="line3" value= "<?php echo $line3; ?>">
+      <input class="form-control" type="text" name="line3" value= "<?php echo $line3; ?>">
     </div>
     <div class="form-group">
       <label>Info Line 4</label>
-      <input type="text" name="line4" value= "<?php echo $line4; ?>">
+      <input class="form-control" type="text" name="line4" value= "<?php echo $line4; ?>">
     </div>
     <div class="form-group">
     <?php if ($edit_state == false): ?>
-      <button type="submit" name="save" class="btn">Save</button>
+      <button class="btn btn-info btn-lg" type="submit" name="save" class="btn">Save</button>
     <?php else: ?>
-      <button type="submit" name="update" class="btn">Update</button>
+      <button class="btn btn-info btn-lg" type="submit" name="update" class="btn">Update</button>
     <?php endif ?>
     </div>
     </form>
