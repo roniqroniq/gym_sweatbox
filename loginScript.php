@@ -8,7 +8,7 @@ include "connect.php";?>
 
 
 if(isset($_POST['login'])){
-    
+
     $username = $_POST['email'];
     $userpassword = $_POST['password'];
 
@@ -17,14 +17,14 @@ if(isset($_POST['login'])){
 
 
 
-    //SQL query to check the email and password of the user are in the database 
+    //SQL query to check the email and password of the user are in the database
     $query = "SELECT * FROM user WHERE user_email ='{$username}'";
     $select_user_query =mysqli_query($db_connection,$query);
     if (!$select_user_query){
         die("Query failed".mysqli_error($db_connection));
     }
 
-//looping through the info in the database to see if it is there 
+//looping through the info in the database to see if it is there
     while ($row =mysqli_fetch_array($select_user_query)){
 
         $db_username = $row['user_email'];
@@ -44,7 +44,7 @@ if(isset($_POST['login'])){
         $_SESSION['username'] = $db_username;// here we are assigning this user name (email) to a session called username.
         $_SESSION['role_id'] = $db_userrole;
         $_SESSION['user_password'] = $db_password;
-        
+
         header ("Location:indexmem.php");
         exit;
     } else if ($db_userrole == 1){ // here it will log the user in as 1 because one is the admin in the user table.
@@ -62,5 +62,3 @@ if(isset($_POST['login'])){
 
 }
 ?>
-
-
