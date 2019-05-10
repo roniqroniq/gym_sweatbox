@@ -33,16 +33,16 @@ if(isset($_POST['login'])){
   }
 // This should redirect to the index page if the username and user password are not  the same . This is not working and I am not sure why.
    if ($email != $db_email || $userpassword != $db_password){
-
-       header("Location:about.php");
+      echo "<h1>wrong email or password</h1>";
+       //header("Location:about.php");
 
 // This should redirect if the password and user email are the same .
-} else if ($email == $db_email && $userpassword == $db_password){
+    } else if ($email == $db_email && $userpassword == $db_password){
 
-   if ($db_role == 2  ){//here if the user role is 2 then it will log the user in as normal user
-       $_SESSION['user_email'] = $db_email;// here we are assigning this user name (email) to a session called username.
-       $_SESSION['role'] = $db_role;
-       $_SESSION['password'] = $db_password;
+      if ($db_role == 2  ){//here if the user role is 2 then it will log the user in as normal user
+           $_SESSION['user_email'] = $db_email;// here we are assigning this user name (email) to a session called username.
+           $_SESSION['role'] = $db_role;
+           $_SESSION['password'] = $db_password;
 
        header ("Location:indexmem.php");
        exit;
