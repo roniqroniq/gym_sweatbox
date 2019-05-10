@@ -12,7 +12,7 @@ if(isset($_GET['edit'])){
   $line1 = $record['line1'];
   $line2 = $record['line2'];
   $line3 = $record['line3'];
-  $line3 = $record['line4'];
+  $line4 = $record['line4'];
   $id = $record['id'];
 }?>
 
