@@ -3,9 +3,9 @@
 session_start();
 // include_once 'connect.php';
 
-// if (!isset($_SESSION['username'])){
-//   header("Location:login.php");
-// }
+ if (!isset($_SESSION['user_name'])){
+   header("Location:login.php");
+ }
 
 
 
@@ -60,7 +60,7 @@ session_start();
             <ul class="navbar-nav mr-auto">
               
               <li class="nav-item active">
-                <a class="nav-link" href="">GOALS</a>
+                <a class="nav-link" href="testimonial_add.php">TESTIMONIAL</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="classes.php">CLASSES</a>
