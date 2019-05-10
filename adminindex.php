@@ -44,7 +44,7 @@ if (!isset($_SESSION['user_email'])){
         <br>
         <div class="card border-0">
     	<div class="card border-0 shadow col-md-12 p-3">
-
+        
     		<div class="row ">
             <div class="col-md-4">
     				<img class="w-100" src="mem.png"style ="width:500px;height:250px;margin:5%;">
