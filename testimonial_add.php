@@ -53,22 +53,40 @@ require "header.php";
 
     <hr class="featurette-divider">
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-3">
+              <h4>Share a testimonial with the others.</h4>
+              <h6> Spread the love! </h6>
+                <form role="form" method="post" id="contact_form" >
+                    <div class="form-group">
+                        <label for="name"> Class:</label>
+                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="name"> Comment:</label>
+                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs"a href="#" style="background-color:grey">Send</button>
+                </form>
+                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="container">
+                <div class="col-md-6 col-md-offset-3">
+                <form action="upload-manager.php" method="post" enctype="multipart/form-data">
+                  </div>
 
-    <!-- Upload Testimonial. -->
+              </div>
+        </div>
+        </div>
+    </div>
+
 
     <div class="container">
     <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-        <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-            <h4>Have a feedback? Upload your pictures and share your comments with the others! </h4>
-            <h6> Only .pdf, .jpg and .jpeg formats allowed. <br>
-            Max size: 5 MB. </h6>
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-            <label for="fileSelect">Filename:</label>
-            <input type="file" name="photo" id="fileSelect">
-            <input type="submit" name="submit" value="Upload">
-        </div>
+
       </div>
       </div>
 
