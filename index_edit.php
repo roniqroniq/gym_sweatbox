@@ -32,7 +32,7 @@ if(isset($_GET['edit'])){
     <div class="container">
 
       <?php if(isset($_SESSION['msg'])): ?>
-      <div class="msg">
+      <div class="msg alert alert-success">
           <?php
 
               echo $_SESSION['msg'];
@@ -40,7 +40,8 @@ if(isset($_GET['edit'])){
           ?>
       </div>
       <?php endif ?>
-      <h2>Index Features Edit</h2> Index features may be added, editted, or deleted below: </p>
+      <h2>Membership Information Edit</h2> <p>Membership information may be added, editted, or deleted below: </p>
+        <!--Displays the table of information with edit and delete buttons beside each -->
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -55,17 +56,17 @@ if(isset($_GET['edit'])){
                   <td><?php echo $row['title']; ?></td>
                   <td><?php echo $row['content']; ?></td>
                   <td>
-                    <a class="btn btn-info"href="index_edit.php?edit=<?php echo $row['id']; ?>">Edit</a>
+                    <a class="btn btn-info" href="index_edit.php?edit=<?php echo $row['id']; ?>">Edit</a>
                   </td>
                   <td>
-                    <a class="btn btn-danger" href="server.php?del =<?php echo $row['id']  ?>">Delete</a>
+                    <a class="btn btn-danger" href="server.php?del=<?php echo $row['id']  ?>">Delete</a>
                   </td>
               </tr> <?php } ?>
         </tbody>
       </table>
 
       <!-- this is the form for editting or adding - this is for admin -->
-    <form class="form-group"  method="post" action="server.php">
+    <form method="post" class="form-group" action="server.php">
     <input type ="hidden" name="id" value="<?php echo $id; ?> ">
     <div class="form-group ">
       <label>Title</label>

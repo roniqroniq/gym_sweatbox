@@ -36,7 +36,7 @@ if(isset($_GET['edit'])){
     <div class="container">
 
       <?php if(isset($_SESSION['msg'])): ?>
-      <div class="msg">
+      <div class="msg alert alert-success">
           <?php
 
               echo $_SESSION['msg'];
