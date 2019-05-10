@@ -1,9 +1,9 @@
 
-<?php   
+<?php
 session_start();
 // include_once 'connect.php';
 
- if (!isset($_SESSION['user_name'])){
+ if (!isset($_SESSION['user_email'])){
    header("Location:login.php");
  }
 
@@ -46,7 +46,7 @@ session_start();
 <div class="navy">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="index.php" style="max-width: 4%;">
-                <img src="logo.png" class="img-fluid">
+                <img src="img/logo.png" class="img-fluid">
              </a>
 
 
@@ -58,7 +58,7 @@ session_start();
 
           <div class="collapse navbar-collapse" id="links">
             <ul class="navbar-nav mr-auto">
-              
+
               <li class="nav-item active">
                 <a class="nav-link" href="testimonial_add.php">TESTIMONIAL</a>
               </li>
@@ -68,20 +68,20 @@ session_start();
               <li class="nav-item active">
                 <a class="nav-link" href="signup.php">JOIN NOW</a>
               </li>
-             
+
               <li class="nav-item active">
                 <a class="nav-link" href="career.php">CAREERS</a>
               </li>
-              
+
               <li class="nav-item active">
                 <a class="nav-link" href="">CONTACT US</a>
               </li>
 
-              
+
             </ul>
-            </div> 
-             
-            <p style="color:white;"> WELCOME <?php echo $_SESSION ['user_name'] ?> </p>
+            </div>
+
+            <p style="color:white;"> WELCOME <?php echo $_SESSION ['user_email'] ?> </p>
             <div class="collapse navbar-collapse" id="account">
             <ul class="navbar-nav ml-auto">
                <br>
