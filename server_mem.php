@@ -36,7 +36,7 @@
       $line4= mysqli_real_escape_string($db_connection, $_POST['line4']);
       $id = mysqli_real_escape_string($db_connection, $_POST['id']);
 
-      mysqli_query($db_connection, "UPDATE fee_edit SET type ='$type', fee='$fee', line1='$line1', line2='$line2', line3='$line4', line3='$line4'
+      mysqli_query($db_connection, "UPDATE fee_edit SET type ='$type', fee='$fee', line1='$line1', line2='$line2', line3='$line3', line4='$line4'
       WHERE id=$id");
       $_SESSION['msg'] = "Content updated";
       header('location: mem_edit.php');
