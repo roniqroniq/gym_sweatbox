@@ -40,7 +40,7 @@ if(isset($_GET['edit'])){
           ?>
       </div>
       <?php endif ?>
-      <h2>Membership Information Edit</h2> <p>Membership information may be added, editted, or deleted below: </p>
+      <h2>Index Information Edit</h2> <p>Index information may be added, editted, or deleted below: </p>
         <!--Displays the table of information with edit and delete buttons beside each -->
       <table class="table table-bordered">
         <thead>
