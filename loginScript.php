@@ -44,7 +44,7 @@ if(isset($_POST['login'])){
         $_SESSION['user_email'] = $db_email;// here we are assigning this user name (email) to a session called username.
         $_SESSION['role'] = $db_role;
         $_SESSION['password'] = $db_password;
-        echo "<h1> HELLO </h2>";
+      
         header ('Location: indexmem.php');
         // exit();
     } else if ($db_role == 1){ // here it will log the user in as 1 because one is the admin in the user table.
